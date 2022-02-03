@@ -1,0 +1,27 @@
+.headerNavigation {
+    padding: 29px 114px;
+    display: flex;
+    justify-content: space-between;
+}
+.linksSection, .contactsLink, .languageSwitcher {
+    display: flex;
+    align-items: center;
+}
+.linksSection a {
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: 'foundry-boldita';
+    color: #2B1A51;
+}
+.contactsLink a{
+    font-family: 'foundry-boldita';
+    color: #2B1A51;
+    text-decoration: none;
+}
+.linksSection a:last-child { margin-right: 0px; }
+.language {
+    font-family: 'foundry-boldita';
+    color: #2B1A51;
+}
+.language.active { color: #F46628 }
+.switcher { margin: 0px 8px; }

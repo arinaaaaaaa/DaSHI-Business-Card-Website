@@ -1,0 +1,94 @@
+.contentSection {
+    margin-top: 87px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 1210px;
+}
+.bigNewsSection {
+    width: 798px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    box-sizing: border-box;
+    padding: 36px 63px;
+    background-color: #fff;
+}
+.titleSection { display: flex; }
+.bigNewsSection p {
+    margin-left: 20px;
+    font-family: 'foundry-boldita';
+    color: #2B1A51;
+}
+.top {
+    display: flex;
+    align-items: center;
+}
+.top p {
+    margin-left: 10px;
+    color: #2B1A51;
+    font-family: 'gilroy-light';
+    font-size: 15px;
+}
+.DSService {
+    width: 798px;
+    padding: 37px 63px;
+    padding-bottom: 59px;
+    box-sizing: border-box;
+    background: url("../public/images/DSService.svg") no-repeat;
+}
+.sectionTitle { 
+    text-align: center;
+    font-family: 'foundry-boldita';
+    font-size: 17px;
+    color: #fff;
+}
+.buyersInfo {
+    margin-top: 45px;
+    display: flex;
+}
+.buyers { width: 50%; }
+.buyers:first-child { border-right: 1px solid #fff;}
+.buyers:last-child { 
+    box-sizing: border-box;
+    padding-left: 77px;
+}
+.buyers a {
+    display: flex;
+    color: #fff;
+    font-family: 'gilroy';
+    margin-bottom: 15px;
+}
+.buyers a img { margin-left: 10px; }
+.buyers p {
+    font-family: 'gilroy-light';
+    font-size: 15px;
+    line-height: 22.5px;
+    color: #fff;
+}
+.smallNewsSection {
+    width: 798px;
+    display: flex;
+}
+.smallNews {
+    box-sizing: border-box;
+    padding: 41px 63px;
+    background-color: #fff;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.smallNews:last-child { background-color: #ECEBEE; }
+.newsTitle {
+    font-family: 'foundry-boldita';
+    font-size: 17px;
+    line-height: 22.95px;
+    color: #2B1A51;
+    margin-bottom: 22px;
+}

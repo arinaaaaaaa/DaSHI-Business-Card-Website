@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'foundry-bold';
+    src: url('/fonts/Foundry Monoline/FoundryMonolineOT3-Bold.otf');
+}
+@font-face {
+    font-family: 'foundry-boldita';
+    src: url('/fonts/Foundry Monoline/FoundryMonolineOT3-BoldIta.otf');
+}
+@font-face {
+    font-family: 'foundry-regular';
+    src: url('/fonts/Foundry Monoline/FoundryMonolineOT3-Regular.otf');
+}
+@font-face {
+    font-family: 'foundry-regita';
+    src: url('/fonts/Foundry Monoline/FoundryMonolineOT3-RegIta.otf');
+}
+@font-face {
+    font-family: 'foundry-medium';
+    src: url('/fonts/Foundry Monoline/FoundryMonolineOT3-Medium.otf');
+}
+@font-face {
+    font-family: 'foundry-exboldita';
+    src: url('/fonts/Foundry Monoline/FoundryMonolineOT3-ExBdIta.otf');
+}
+@font-face {
+    font-family: 'gilroy';
+    src: url('/fonts/Gilroy/Gilroy-Medium.ttf');
+}
+@font-face {
+    font-family: 'gilroy-light';
+    src: url('/fonts/Gilroy/Gilroy-Light.ttf');
+}
+@font-face {
+    font-family: 'gilroy-regular';
+    src: url('/fonts/Gilroy/Gilroy-Regular.ttf');
+}
+@font-face {
+    font-family: 'gilroy-bold';
+    src: url('/fonts/Gilroy/Gilroy-Bold.ttf');
+}
+@font-face {
+    font-family: 'gilroy-semibold';
+    src: url('/fonts/Gilroy/Gilroy-SemiBold.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color:#F6F6F6;
+}

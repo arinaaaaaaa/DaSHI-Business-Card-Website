@@ -1,0 +1,48 @@
+.footerSection {
+    width: 100%;
+    position:relative;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 92px 112px;
+    background: #2B1A510D;
+}
+.logo img { width: 170px; }
+.companyInfo {
+    font-size: 15px;
+    font-family: 'gilroy-light';
+    color: #2B1A51;
+    margin-top: 110px;
+}
+.linksSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 172px;
+    row-gap: 25px;
+}
+.linksSection a {
+    color: #2B1A51;
+    font-family: 'foundry-boldita';
+    font-size: 17px;
+    text-decoration: none;
+}
+.productsDS {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 57px;
+    box-sizing: border-box;
+    padding: 31px 42px;
+    background-color: #fff;
+}
+.partnersNote {
+    font-family: 'foundry-boldita';
+    line-height: 25.5px;
+    color: #2B1A51;
+    font-size: 17px;
+}
+.partnersLogo img:first-child { margin-right: 57px;}
+.partnersLogo {
+    display: flex;
+    align-items: center;
+}
