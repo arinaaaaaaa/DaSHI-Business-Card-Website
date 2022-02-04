@@ -51,9 +51,9 @@ function MainPage() {
     <>
       <Header/>
       <Question/>
-      <div className={styles.contentSection}>
-        <div className={styles.content}>
-          <Menu/>
+      <div className="contentSection">
+        <div className="content">
+          <Menu page='main'/>
           <div className={styles.banner}>
             <BigNews/>
             <DSService/>

@@ -5,9 +5,9 @@ import styles from "../../styles/components/Header.module.css";
 function HeaderLinks() {
     return (
         <div className = {styles.linksSection}>
-            <a href="#" className = {styles.linkItem}>ПРОДУКЦИЯ DaSHI</a>
+            <a href="/products" className = {styles.linkItem}>ПРОДУКЦИЯ DaSHI</a>
             <a href="#" className = {styles.linkItem}>ПОКУПАТЕЛЯМ</a>
-            <a href="#" className = {styles.linkItem}>ПАРТНЕРАМ</a>
+            <a href="/partners" className = {styles.linkItem}>ПАРТНЕРАМ</a>
             <a href="#" className = {styles.linkItem}>О DaSHI</a>
         </div>
     )
