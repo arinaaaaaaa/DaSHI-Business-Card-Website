@@ -10,8 +10,10 @@
     align-items: center;
     font-family: 'gilroy';
     font-size: 17px;
+    line-height: 25.5px;
     color: #2B1A51;
 }
+.questionSection img { margin-left: 20px;}
 .answerSection {
     box-sizing: border-box;
     padding: 33px 41px;

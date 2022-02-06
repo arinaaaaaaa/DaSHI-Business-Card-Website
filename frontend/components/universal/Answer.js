@@ -62,13 +62,13 @@ function Answer(props) {
     }
 
     return (
-        <div className={styles.answer} style = {isOpen ? {border: 0 + "px"} : null}>
+        <div className={styles.answer} style = {isOpen ? {border: 0 + "px"} : null} style = {props.long == "yes" ? {boxSizing: 'border-box', paddingTop: 10+"px"} : null}>
             <div className={styles.questionSection}>
                 {props.question}
                 <animated.img style={arrowRotate} src="icons/showAnswer.svg" alt="" onClick={() => startAnimation()}/>
             </div>
             {isOpen ?
-                <div className={styles.answerSection}>
+                <div className={styles.answerSection} style = {props.long == "yes" ? {marginTop: 10+"px"} : null} >
                     {props.answer}
                 </div>
             : ""}

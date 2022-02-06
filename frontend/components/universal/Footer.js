@@ -18,7 +18,7 @@ function Navigation() {
                 <a href="/products">ПРОДУКЦИЯ DaSHI</a>
                 <a href="/partners">ПАРТНЕРАМ</a>
                 <a href="#">НАПИШИТЕ НАМ</a>
-                <a href="#">ПОКУПАТЕЛЯМ</a>
+                <a href="/buyers">ПОКУПАТЕЛЯМ</a>
                 <a href="#">О DaSHI</a>
             </div>
             <div className = {styles.productsDS}>
