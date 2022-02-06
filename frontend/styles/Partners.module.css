@@ -1,0 +1,60 @@
+.partnersSection {
+    width: 798px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 39px 63px;
+}
+.partnersHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+.sectionTitle {
+    font-family: 'foundry-boldita';
+    font-size: 17px;
+    line-height: 22.95px;
+    color: #2B1A51;
+}
+.partnerTypes button {
+    height: 45px;
+    width: 100px;
+    border: none;
+    background-color: #2B1A51;
+    font-family: 'gilroy';
+    color: #fff;
+}
+.partnerTypes button:first-child { margin-right: 26px; }
+.title {
+    text-align: center;
+    font-family: 'gilroy';
+    font-size: 21px;
+    line-height: 46.2px;
+    color: #2B1A51;
+    margin-bottom: 7px;
+}
+.discription {
+    border-left: 3px solid #F46628;
+    box-sizing: border-box;
+    padding-left: 35px;
+    font-family: 'gilroy-regular';
+    color: #2B1A51;
+    font-size: 15px;
+    line-height: 22.5px;
+    margin-bottom: 24px;
+}
+.pps {
+    list-style-position: inside;
+    font-family: 'gilroy-light';
+    font-size: 13px;
+    line-height: 19.5px;
+    color: #2B1A51;
+    list-style: "\00a0• ";
+    padding-left: 15px;
+}
+.ps {
+    font-family: 'gilroy';
+    font-size: 13px;
+    line-height: 19.5px;
+    color: #2B1A51;
+}

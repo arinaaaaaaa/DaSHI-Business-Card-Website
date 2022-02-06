@@ -7,7 +7,7 @@ function Menu(props) {
     else if (props.page == 'buyers') menuType = 2
 
     return (
-        <span>
+        <span className={styles.menu}>
             <div className = {styles.linksSection}>
                 {menuType == 0 ?
                     <>

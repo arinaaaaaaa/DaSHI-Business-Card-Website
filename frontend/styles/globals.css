@@ -48,7 +48,7 @@
 }
 html { background-color:#F6F6F6; }
 .contentSection {
-    margin-top: 87px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
@@ -57,4 +57,21 @@ html { background-color:#F6F6F6; }
     display: flex;
     justify-content: space-between;
     width: 1210px;
+}
+.answerTitle {
+    font-family: 'gilroy';
+    font-size: 15px;
+    line-height: 22.5px;
+    margin-bottom: 27px;
+    color: #2B1A51;
+}
+.answerList { 
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    list-style-image: url('../public/icons/listMarker.svg');
+}
+.answerList li span {
+    display: flex;
+    align-items: center;
 }

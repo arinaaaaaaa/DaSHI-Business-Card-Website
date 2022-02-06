@@ -15,7 +15,7 @@ function HeaderLinks() {
 
 function LanguageSwitch() {
     
-    const [checked, setChecked] = useState(0);
+    const [checked, setChecked] = useState(false);
 
     return (
         <>
