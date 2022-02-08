@@ -7,7 +7,7 @@ function AnswerList(props) {
     return (
         <>
             {listAnswer.map(item => (
-                <div className={styles.listItem}>
+                <div className={ props.styleClass != 'about' ? styles.listItem : `${styles.listItem} ${styles.listItemAbout}`}>
                     <img src="icons/listMarker.svg" alt="" />
                     <p>{item}</p>
                 </div>

@@ -26,6 +26,7 @@
     font-family: 'foundry-boldita';
     font-size: 17px;
     text-decoration: none;
+    cursor: pointer;
 }
 .productsDS {
     display: flex;

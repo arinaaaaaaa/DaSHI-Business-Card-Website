@@ -12,11 +12,13 @@
     text-decoration: none;
     font-family: 'foundry-boldita';
     color: #2B1A51;
+    cursor: pointer;
 }
 .contactsLink a{
     font-family: 'foundry-boldita';
     color: #2B1A51;
     text-decoration: none;
+    cursor: pointer;
 }
 .linksSection a:last-child { margin-right: 0px; }
 .language {

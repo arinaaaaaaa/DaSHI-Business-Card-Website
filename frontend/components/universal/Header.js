@@ -8,7 +8,7 @@ function HeaderLinks() {
             <a href="/products" className = {styles.linkItem}>ПРОДУКЦИЯ DaSHI</a>
             <a href="/buyers" className = {styles.linkItem}>ПОКУПАТЕЛЯМ</a>
             <a href="/partners" className = {styles.linkItem}>ПАРТНЕРАМ</a>
-            <a href="#" className = {styles.linkItem}>О DaSHI</a>
+            <a href="/about" className = {styles.linkItem}>О DaSHI</a>
         </div>
     )
 }

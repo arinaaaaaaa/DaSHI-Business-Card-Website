@@ -19,7 +19,7 @@ function Navigation() {
                 <a href="/partners">ПАРТНЕРАМ</a>
                 <a href="#">НАПИШИТЕ НАМ</a>
                 <a href="/buyers">ПОКУПАТЕЛЯМ</a>
-                <a href="#">О DaSHI</a>
+                <a href="/about">О DaSHI</a>
             </div>
             <div className = {styles.productsDS}>
                 <p className = {styles.partnersNote}><span style={{color: '#F46628'}}>ПРОДУКЦИЯ DS</span>, ПРЕДСТАВЛЕННАЯ<br/>ПАРТНЕРАМИ НА</p>

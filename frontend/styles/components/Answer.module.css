@@ -36,3 +36,13 @@
     color: #2B1A51;
     margin-left: 23px;
 }
+
+.listItemAbout { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px 0px;
+    border-bottom: 1px solid #CBCBCB;
+}
+.listItemAbout p { 
+    font-family: 'gilroy-regular';
+    font-size: 18px;}

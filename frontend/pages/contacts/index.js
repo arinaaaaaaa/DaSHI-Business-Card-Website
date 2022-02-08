@@ -111,7 +111,7 @@ function FeedbackForm() {
                 </div>
                 <div className={styles.toSend}>
                     <button type="submit">Отправить</button>
-                    <input className={styles.agree} type="checkbox" /><span className={styles.agreesment}>Я даю свое согласие на обработку персональных данных</span>
+                    <input className={styles.agree} type="checkbox" /><span className={styles.agreesment}>Отправляя данную форму, я даю свое согласие на оработку своих персональных данных</span>
                 </div>
             </div>
         </div>
