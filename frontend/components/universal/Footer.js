@@ -14,7 +14,7 @@ function Navigation() {
     return (
         <span>
             <div className = {styles.linksSection}>
-                <a href="#">КОНТАКТЫ</a>
+                <a href="/contacts">КОНТАКТЫ</a>
                 <a href="/products">ПРОДУКЦИЯ DaSHI</a>
                 <a href="/partners">ПАРТНЕРАМ</a>
                 <a href="#">НАПИШИТЕ НАМ</a>

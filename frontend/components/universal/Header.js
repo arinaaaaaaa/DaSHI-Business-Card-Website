@@ -48,7 +48,7 @@ function Header() {
                 <img src="/icons/LogoIcon.svg" alt="" />
             </a>
             <HeaderLinks/>
-            <div className={styles.contactsLink}><a href="#">КОНТАКТЫ</a></div>
+            <div className={styles.contactsLink}><a href="/contacts">КОНТАКТЫ</a></div>
             <LanguageSwitch/>
         </div>
     )

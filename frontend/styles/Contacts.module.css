@@ -1,0 +1,201 @@
+.bannerSection {
+    position: relative;
+    width: 100%;
+    height: 346px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: #fff;
+}
+.contacts {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 78px 113px;
+    border-image-outset: 150px;
+    z-index: 1;
+}
+.contacts img {
+    position: relative;
+    top: -190px;
+}
+.title {
+    font-family: 'foundry-boldita';
+    font-size: 43px;
+    line-height: 51.6px;
+    color: #2B1A51;
+}
+.subTitle {
+    font-family: 'foundry-boldita';
+    font-size: 160px;
+    color: #F6F6F6;
+    position: absolute;
+    bottom: -48px;
+    right: 0;
+}
+.partnersSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.partners { width: 1210px; }
+.partnersTitle {
+    font-family: 'foundry-boldita';
+    font-size: 33px;
+    color: #2B1A51;
+}
+.partnersList {
+    margin: 40px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 273px);
+    column-gap: 26px;
+    row-gap: 26px;
+}
+.partnerItem {
+    box-sizing: border-box;
+    padding: 27px 23px 38px 34px;
+    background-color: #fff;
+}
+.partnerName {
+    font-family: 'gilroy';
+    font-size: 19px;
+    color: #2B1A51;
+}
+.partnerAddress {
+    margin-top: 23px;
+    display: flex;
+    align-items: start;
+}
+.partnerAddress p, .partnerSite a, .partnerPhone p {
+    margin-left: 18px;
+    font-family: 'gilroy';
+    font-size: 13px;
+    color: #2B1A51;
+}
+.partnerSite, .partnerPhone {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+.partnerSite a { text-decoration: none; }
+.showMorePartners {
+    background: none;
+    border: none;
+    font-family: 'gilroy';
+    font-size: 17px;
+    color: #F46628;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*feedback form*/
+.feedbackSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.feedback {
+    margin-top: 100px;
+    width: 1210px;
+    background-color: #ECEBEE;
+    box-sizing: border-box;
+    padding: 74px 107px;
+    position: relative;
+    overflow: hidden;
+}
+.feedback img {
+    position: absolute;
+    right: -35px;
+    top: 36px;
+}
+.formTitle {
+    font-family: 'foundry-boldita';
+    font-size: 33px;
+    margin-bottom: 10px;
+    color: #2B1A51;
+}
+.formPS {
+    font-family: 'gilroy';
+    font-size: 15px;
+    color: #2B1A51;
+}
+.messageForms {
+    height: 369px;
+    margin-top: 56px;
+    margin-bottom: 84px;
+    display: flex;
+    justify-content: space-between;
+}
+.userInfoForm { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 386px;
+    height: 369px;
+}
+.userData {
+    font-family: 'gilroy';
+    font-size: 15px;
+    color: #2B1A51;
+    margin-bottom: 6px;
+}
+.userDataInput, .messageForm textarea {
+    width: 100%;
+    height: 45px;
+    border: 0;
+    box-sizing: border-box;
+    padding: 0px 22px;
+    margin-bottom: 26px;
+    margin-top: 0;
+    font-family: 'gilroy';
+    font-size: 13px;
+    outline: none;
+}
+.userDataInput:last-child, .messageForm textarea { margin-bottom: 0; }
+.messageForm { width: 591px; }
+.messageForm textarea {
+    height: 345px;
+    padding: 20px 22px;
+    resize: none;
+}
+.toSend button {
+    background-color:#F46628;
+    height: 55px;
+    width: 180px;
+    border: none;
+    color: #fff;
+    font-family: 'gilroy';
+    font-size: 15px;
+    margin-right: 26px;
+    cursor: pointer;
+}
+.agreesment {
+    font-family: 'gilroy';
+    line-height: 18px;
+    margin-left: 14px;
+    font-size: 13px;
+    color: #A6A6A6;
+}
+.agree {
+    -webkit-appearance: none;
+    margin-top: 10px;
+	background-color: #fff;
+	border: none;
+    height: 18px;
+    width: 18px;
+	border-radius: 0px;
+    margin: 0px 0px;
+    margin-bottom: -4px;
+    cursor: pointer;
+}
+.agree:checked::after {
+    margin-bottom: -20px;
+    content:"\2713";
+    font-size: 14px;
+    position: relative;
+    top: 0px;
+    left: 3px;
+    color: #F46628;
+}
