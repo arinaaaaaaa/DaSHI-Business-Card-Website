@@ -1,0 +1,145 @@
+.bannerSection {
+    position: relative;
+    width: 100%;
+    height: 346px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: #fff;
+}
+.guarantee {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 78px 113px;
+    padding-right: 0;
+    z-index: 1;
+}
+.guarantee img {
+    position: relative;
+    top: -210px;
+    right: -70px;
+    height: 604px;
+    width: 916px;
+}
+.title {
+    font-family: 'foundry-boldita';
+    font-size: 43px;
+    line-height: 51.6px;
+    color: #2B1A51;
+}
+.subTitle {
+    font-family: 'foundry-boldita';
+    font-size: 160px;
+    color: #F6F6F6;
+    position: absolute;
+    bottom: -48px;
+    left: 107px;
+}
+.wrapper { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.rulesSection { 
+    width: 1210px;
+    margin-bottom: 100px;
+}
+.rules {
+    width: 1000px;
+    font-family: 'gilroy-regular';
+    font-size: 21px;
+    line-height: 31.5px;
+    color: #2B1A51;
+    margin-bottom: 60px;
+}
+.ruleItem { 
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 0px;
+    border-bottom: 1px solid #CBCBCB;
+}
+.ruleItem:last-child { border-bottom: none;}
+.ruleSection {
+    display: flex;
+    justify-content: space-between;
+}
+.ruleSection img { margin-left: 200px; }
+.ruleSection p {
+    font-family: 'gilroy';
+    font-size: 17px;
+    line-height: 25.5px;
+    color: #2B1A51;
+}
+.desc1 { 
+    box-sizing: border-box;
+    padding-left: 40px;
+    margin-top: 30px;
+}
+.documentList {
+    list-style-position: inside;
+    list-style-image: url("../public/icons/listMarkerOrange.svg");
+    font-family: 'gilroy';
+    font-size: 17px;
+    line-height: 25.5px;
+    color: #2B1A51;
+}
+.documentList li:first-child { margin-bottom: 20px; }
+.documentList a { color: #2B1A51; }
+.documentList p { padding-left: 15px; }
+.packageSection {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 592px);
+    column-gap: 26px;
+    row-gap: 30px;
+}
+.packageExample p {
+    margin-top: 18px;
+    font-family: 'gilroy-regular';
+    font-size: 13px;
+    line-height: 19.5px;
+    color: #2B1A51;
+}
+.feedbackSection {
+    position: relative;
+    width: 1210px;
+    box-sizing: border-box;
+    padding: 81px 103px;
+    background-color: #ECEBEE;
+    margin-bottom: 100px;
+}
+.background {
+    position: absolute;
+    right: 0px;
+    top: 36px;
+}
+.feedbackSection p {
+    font-family: 'gilroy';
+    font-size: 25px;
+    line-height: 37.5px;
+    color: #2B1A51;
+    margin-bottom: 50px;
+}
+.feedbackList {
+    display: grid;
+    grid-template-columns: repeat(3, 315px);
+    column-gap: 29px;
+}
+.feedbackItem {
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 46px 43px;
+    padding-bottom: 29px;
+}
+.feedbackItem p {
+    font-size: 13px;
+    line-height: 19.5px;
+    margin: 0;
+    margin-top: 32px;
+}
+.feedbackItem a { color: #F46628; }

@@ -37,7 +37,7 @@ function QuestionList() {
                         При обращении по гарантийному случаю или при оформлении претензии необходимо следовать
                         определенным правилам.
                     </p>
-                    <a href="#" className={styles.titleBuyers} style={{color: '#F46628'}}>Подробнее</a>
+                    <a href="/guarantee" className={styles.titleBuyers} style={{color: '#F46628'}}>Подробнее</a>
                 </>
             }/>
             <Answer question="Сервис DS. Экспресс-доставка" answer = {
