@@ -1,6 +1,8 @@
 import Header from "../../components/universal/Header.js"
 import Footer from "../../components/universal/Footer.js";
 import styles from "../../styles/Contacts.module.css";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function Banner() {
     return (
@@ -30,8 +32,8 @@ function PartnerItem(props) {
                 <img src="icons/smallPhone.svg" alt="" />
                 <p>{props.phone}</p>
                 <div className={styles.partnerNetworks} style = {{marginLeft: 18 + "px"}}>
-                    <a href="#"><img src="icons/whatsApp.svg" alt="" style={{marginRight: 10 + "px"}}/></a>
-                    <a href="#"><img src="icons/telegram.svg" alt="" /></a>
+                    {props.whatsAppLink != null ? <a href={props.whatsAppLink}><img src="icons/whatsApp.svg" alt="" style={{marginRight: 10 + "px"}}/></a> : null}
+                    {props.telegramLink != null ? <a href={props.telegramLink} ><img src="icons/telegram.svg" alt="" /></a> : null}
                 </div>
             </div>
         </span>
@@ -39,44 +41,48 @@ function PartnerItem(props) {
 }
 
 function Partners() {
-    return (
-        <div className={styles.partnersSection}>
-            <div className={styles.partners}>
-                <p className={styles.partnersTitle}>ПАРТНЕРЫ <span style={{color: '#F46628'}}>DaSHI</span> В РОССИИ</p>
-                <div className={styles.partnersList}>
-                    <PartnerItem 
-                        name="ООО «ДиЭс Трейд»" 
-                        location="675000, Россия, Амурская область, г. Благовещенск, ул. Чайковского 7д, оф. 304"
-                        site="http://dsparts-dv.com"
-                        siteName="www.dsparts-dv.com"
-                        phone="8 (914) 388-78-39"
-                    />
-                    <PartnerItem 
-                        name="ООО «РК-Трейд»" 
-                        location="675000, Россия, Амурская область, г. Благовещенск, ул. Чайковского 7д, оф. 304"
-                        site="http://dsparts-dv.com"
-                        siteName="www.dsparts-dv.com"
-                        phone="8 (914) 388-78-39"
-                    />
-                    <PartnerItem 
-                        name="ООО «ДиЭс Трейд»" 
-                        location="675000, Россия, Амурская область, г. Благовещенск, ул. Чайковского 7д, оф. 304"
-                        site="http://dsparts-dv.com"
-                        siteName="www.dsparts-dv.com"
-                        phone="8 (914) 388-78-39"
-                    />
-                    <PartnerItem 
-                        name="ООО «РК-Трейд»" 
-                        location="675000, Россия, Амурская область, г. Благовещенск, ул. Чайковского 7д, оф. 304"
-                        site="http://dsparts-dv.com"
-                        siteName="www.dsparts-dv.com"
-                        phone="8 (914) 388-78-39"
-                    />
+    const [partnersList, setPartnersList] = useState(null)
+    const [isOpened, setOpened] = useState(false)
+
+    function getPartnersList() {
+        axios('http://localhost:8000/partners/list/', { withCredentials: true })
+        .then((response) => { 
+            setPartnersList(response.data)
+        })
+    }
+
+    useEffect(() => {getPartnersList()}, [])
+
+    if (partnersList != null) {
+        let partnersArray = partnersList
+
+        if (isOpened == false) {
+            partnersArray = partnersList.slice(0, 4)
+        }
+        console.log(partnersArray)
+
+        return (
+            <div className={styles.partnersSection}>
+                <div className={styles.partners}>
+                    <p className={styles.partnersTitle}>ПАРТНЕРЫ <span style={{color: '#F46628'}}>DaSHI</span> В РОССИИ</p>
+                    <div className={styles.partnersList}>
+                        {partnersArray.map((item) =>
+                            <PartnerItem 
+                                name={item.name}
+                                location={item.address}
+                                site={item.web}
+                                siteName={item.web}
+                                phone={item.phone}
+                                telegramLink = {item.telegram}
+                                whatsAppLink = {item.whatsapp}
+                            />
+                        )}
+                    </div>
+                    {partnersList.length > 4 ? <button className={styles.showMorePartners} onClick={() => setOpened(!isOpened)}>{isOpened ? "Скрыть" : "Смотреть все"}</button> : null}
                 </div>
-                <button className={styles.showMorePartners}>Смотреть все</button>
             </div>
-        </div>
-    )
+        )}
+    else return null
 }
 
 function UserInfo(props) {

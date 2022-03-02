@@ -90,7 +90,6 @@ function NewsList() {
     }
 
     if (newsList != null) {
-        console.log(newsList[0])
         return (
             <div className={styles.newsSection}>
                 <div className={styles.searchSection}>
