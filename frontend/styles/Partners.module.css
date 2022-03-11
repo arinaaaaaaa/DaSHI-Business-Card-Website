@@ -16,6 +16,7 @@
     line-height: 22.95px;
     color: #2B1A51;
 }
+.partnerTypes {display: flex;}
 .partnerTypes button {
     height: 45px;
     width: 100px;
@@ -23,6 +24,7 @@
     background-color: #2B1A51;
     font-family: 'gilroy';
     color: #fff;
+    cursor: pointer;
 }
 .partnerTypes button:first-child { margin-right: 26px; }
 .title {

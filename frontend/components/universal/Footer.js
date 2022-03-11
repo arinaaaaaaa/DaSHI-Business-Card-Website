@@ -17,7 +17,7 @@ function Navigation() {
                 <a href="/contacts">КОНТАКТЫ</a>
                 <a href="/products">ПРОДУКЦИЯ DaSHI</a>
                 <a href="/partners">ПАРТНЕРАМ</a>
-                <a href="#">НАПИШИТЕ НАМ</a>
+                <a href="/contacts#feedback">НАПИШИТЕ НАМ</a>
                 <a href="/buyers">ПОКУПАТЕЛЯМ</a>
                 <a href="/about">О DaSHI</a>
             </div>

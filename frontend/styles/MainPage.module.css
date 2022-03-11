@@ -8,10 +8,11 @@
     background-color: #fff;
 }
 .titleSection { display: flex; }
-.bigNewsSection p {
+.newsTitleBanner{
     margin-left: 20px;
     font-family: 'foundry-boldita';
     color: #2B1A51;
+    text-decoration: none;
 }
 .top {
     display: flex;
@@ -46,18 +47,18 @@
     box-sizing: border-box;
     padding-left: 63px;
 }
-.buyers a {
-    display: flex;
+.buyers span { display: flex; }
+.buyersTitle {
     color: #fff;
     font-family: 'gilroy';
-    margin-bottom: 15px;
 }
 .buyers a img { margin-left: 10px; }
-.buyers p {
+.buyersText {
     font-family: 'gilroy-light';
     font-size: 15px;
     line-height: 22.5px;
     color: #fff;
+    margin-top: 15px;
 }
 .smallNewsSection {
     width: 798px;

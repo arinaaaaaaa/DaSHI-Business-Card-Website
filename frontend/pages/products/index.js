@@ -7,9 +7,16 @@ import styles from "../../styles/Products.module.css";
 function ProductItem(props) {
     return (
         <span className={styles.productItem}>
-            <img src={props.imgSrc} alt="" />
-            <p className={styles.itemTitle}>{props.title}</p>
-            <img src="icons/help-light.svg" alt="help" />
+            <span>
+                <img src={props.imgSrc} alt="" className={styles.productImg}/>
+                <p className={styles.itemTitle}>{props.title}</p>
+            </span>
+            <span  class="tooltip">
+                <img src="icons/help-light.svg" alt="help"/>
+                <span class="promt">
+                    {props.promt}
+                </span>
+            </span>
         </span>
     )
 }
@@ -19,13 +26,45 @@ function ProductsSection() {
         <div className={styles.productsSection}>
             <div className={styles.linksSection}>
                 <a href="#">УПАКОВКА <span style={{color: '#F46628'}}>DS</span></a>
-                <a href="#"><span>КОНТРОЛЬ КАЧЕСТВА <span style={{color: '#F46628'}}>DS</span></span><img src="icons/help.svg" alt="" /></a>
+                <span className={`${styles.linkSection} ${"tooltip"}`}>КОНТРОЛЬ КАЧЕСТВА<span style={{color: '#F46628'}}>&nbsp;DS</span><img src="icons/help.svg" alt="" />
+                    <span class="promt">
+                        Вся продукция DaSHI сертифицирована в России. Каждая партия проходит полную процедуру
+                        таможенного оформления и очистки на территории РФ. <a href="http://localhost:3000/buyers">Подробнее</a>
+                    </span>
+                </span>
             </div>
             <div className={styles.productsGrid}>
-                <ProductItem imgSrc="images/nozzelSmall.svg" title="Форсунки топливные DS"/>
-                <ProductItem imgSrc="images/nozzelSmall.svg" title="Комплектующие к форсункам DS"/>
-                <ProductItem imgSrc="images/nozzelSmall.svg" title="Комплекты переделки DS"/>
-                <ProductItem imgSrc="images/nozzelSmall.svg" title="Запчасти DS"/>
+                <ProductItem
+                    imgSrc="images/products1.svg"
+                    title="Форсунки топливные DS"
+                    promt="Форсунки топливные DS (DaSHI) Евро 2, 3, 4, 5 – высококачественные оригинальные форсунки,
+                    обеспечивающие экономичный расход топлива. Форсунки DaSHI используются в качестве
+                    аналогов форсунок таких брендов, как Bosch, Denso, Delphi, Weichai, Yuchai и др. Мы
+                    реализуем форсунки для бензиновых и дизельных двигателей системы Common Rail (CR).
+                    Уточнить стоимость, наличие и сроки поставки интересующего вас товара можно по артикулу
+                    (указав номер DS или аналога), оставив заявку через форму обратной связи либо обратившись
+                    в службу клиентской поддержки."
+                />
+                <ProductItem
+                    imgSrc="images/products2.svg"
+                    title="Комплектующие к форсункам DS"
+                    promt = "Комплектующие для форсунок DS – широкий спектр комплектующих для форсунок различных
+                    типов - распылители, штуцеры, клапаны, соленоиды, гайки, шарики, кольца, ремкомплекты.
+                    Уточнить стоимость, наличие и сроки поставки интересующего вас товара можно по артикулу
+                    (указав номер DS или аналога), оставив заявку через форму обратной связи либо обратившись
+                    в службу клиентской поддержки."
+                />
+                <ProductItem
+                    imgSrc="images/products3.svg"
+                    title="Комплекты переделки DS"
+                    promt="В данный момент данный товар не доступен для заказа."
+                />
+                <ProductItem
+                    imgSrc="images/products1.svg"
+                    title="Запчасти DS"
+                    promt="Плунжерные пары DS, ЦПГ (цилиндро-поршневые группы), фильтры, свечи накала, насосы, ТНВД.
+                    В данный момент данный товар не доступен для заказа"
+                />
             </div>
         </div>
     )

@@ -12,8 +12,11 @@ function PartnersInfo() {
             <div className={styles.partnersHeader}>
                 <p className={styles.sectionTitle}>СТАТЬ ПАРТНЕРОМ <span style={{color: '#F46628'}}>DS</span></p>
                 <span className={styles.partnerTypes}>
-                    <button style={{cursor: 'pointer'}}>DS +</button>
-                    <button style={{cursor: 'pointer'}}>DS Ultra</button>
+                    <button>DS +</button>
+                    <span className="tooltip">
+                        <button style={{margin: 0}} disabled>DS Ultra</button>
+                        <span className="promt">Раздел находится в разработке</span>
+                    </span>
                 </span>
             </div>
             <p className={styles.title}>Приглашаем Вас в нашу <span style={{color: '#F46628'}}>команду DS</span>!</p>
@@ -135,7 +138,7 @@ function Partners() {
                     <Menu page='partners'/>
                     <span>
                         <PartnersInfo/>
-                        <img src="images/partnersImage.jpg" alt="" />
+                        <img src="images/partnersImage.png" alt="" />
                     </span>
                 </div>
             </div>

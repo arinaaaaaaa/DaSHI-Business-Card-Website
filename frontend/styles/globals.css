@@ -75,3 +75,51 @@ html { background-color:#F6F6F6; }
     display: flex;
     align-items: center;
 }
+/*Всплывающие подсказки*/
+.tooltip {
+    margin: 0;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.promt {
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: -20em;
+    right: -20em;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: max-content;
+    max-width: 25em; 
+    max-height: 80vh;
+    overflow: auto;
+    visibility: hidden;
+    margin: 0 auto .4em;
+    padding: .8em;
+    background: rgb(236, 235, 238);
+}
+.promt, .promtText {
+    font-family: 'gilroy';
+    color: #2B1A51;
+    font-size: 80%;
+    line-height: 20px;
+}
+.tooltip:before {
+    content: "";
+    position: absolute;
+    top: .95em;
+    left: 0;
+    right: 0;
+    height: 2em;
+    visibility: hidden;
+  }
+.tooltip > .promt a {
+    font-family: 'gilroy';
+    color: #2B1A51;
+}
+.tooltip:hover > .promt, .tooltip:hover:before, .tooltip:hover:after, .tooltip:focus > .promt, .tooltip:focus:before, .tooltip:focus:after {
+    visibility: visible;
+    transition: 0s .2s;
+}
+.tooltip:focus { outline: none; }

@@ -50,3 +50,7 @@
     font-family: 'gilroy';
     line-height: 35.4px;
 }
+.links a img {
+    position: relative;
+    display: inline-block;
+}

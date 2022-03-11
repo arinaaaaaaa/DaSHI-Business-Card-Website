@@ -49,7 +49,7 @@ function Header() {
             </a>
             <HeaderLinks/>
             <div className={styles.contactsLink}><a href="/contacts">КОНТАКТЫ</a></div>
-            <LanguageSwitch/>
+            
         </div>
     )
 }

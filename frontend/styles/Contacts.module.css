@@ -18,7 +18,7 @@
 }
 .contacts img {
     position: relative;
-    top: -190px;
+    top: -140px;
 }
 .title {
     font-family: 'foundry-boldita';
@@ -52,7 +52,7 @@
     column-gap: 26px;
     row-gap: 26px;
 }
-.partnerItem {
+.partnerItem, .partnerItemShort {
     box-sizing: border-box;
     padding: 27px 23px 38px 34px;
     background-color: #fff;
@@ -61,6 +61,7 @@
     font-family: 'gilroy';
     font-size: 19px;
     color: #2B1A51;
+    line-height: 38px;
 }
 .partnerAddress {
     margin-top: 23px;
@@ -74,7 +75,7 @@
     color: #2B1A51;
 }
 .partnerSite, .partnerPhone {
-    margin-top: 18px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
 }
@@ -87,6 +88,16 @@
     color: #F46628;
     text-decoration: underline;
     cursor: pointer;
+}
+.partnerItem .partnerInfo {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.partnerItemShort .partnerInfo {
+    box-sizing: border-box;
+    height: 160px;
 }
 
 /*feedback form*/
@@ -120,7 +131,9 @@
     font-family: 'gilroy';
     font-size: 15px;
     color: #2B1A51;
+    line-height: 23px;
 }
+.formPS:last-child { margin-top: 10px;}
 .messageForms {
     height: 369px;
     margin-top: 56px;
@@ -154,11 +167,11 @@
     outline: none;
 }
 .userDataInput:last-child, .messageForm textarea { margin-bottom: 0; }
-.messageForm { width: 591px; }
 .messageForm textarea {
-    height: 345px;
+    height: 246px;
     padding: 20px 22px;
     resize: none;
+    margin-bottom: 26px;
 }
 .toSend button {
     background-color:#F46628;

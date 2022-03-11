@@ -17,24 +17,38 @@ function Banner() {
 }
 
 function PartnerItem(props) {
+    let nullableValues = 0;
+    if (props.site == "") nullableValues += 1
+    if (props.phone == "") nullableValues += 1
+    if (props.location == "") nullableValues += 1
+    console.log (nullableValues)
+
     return (
-        <span className={styles.partnerItem}>
+        <span className={ nullableValues != 1 ? styles.partnerItem : styles.partnerItemShort}>
             <p className={styles.partnerName}>{props.name}</p>
-            <div className={styles.partnerAddress}>
-                <img src="icons/location.svg" alt="" />
-                <p>{props.location}</p>
-            </div>
-            <div className={styles.partnerSite}>
-                <img src="icons/site.svg" alt="" />
-                <a href={props.site}>{props.siteName}</a>
-            </div>
-            <div className={styles.partnerPhone}>
-                <img src="icons/smallPhone.svg" alt="" />
-                <p>{props.phone}</p>
-                <div className={styles.partnerNetworks} style = {{marginLeft: 18 + "px"}}>
-                    {props.whatsAppLink != null ? <a href={props.whatsAppLink}><img src="icons/whatsApp.svg" alt="" style={{marginRight: 10 + "px"}}/></a> : null}
-                    {props.telegramLink != null ? <a href={props.telegramLink} ><img src="icons/telegram.svg" alt="" /></a> : null}
+            <div className={styles.partnerInfo}>
+                {props.location != "" ?
+                <div className={styles.partnerAddress}>
+                    <img src="icons/location.svg" alt="" style={{width: 26 + "px"}}/>
+                    <p>{props.location}</p>
                 </div>
+                : null}
+                {props.site != "" ? 
+                <div className={styles.partnerSite}>
+                    <img src="icons/world.svg" alt="" style={{width: 24 + "px"}}/>
+                    <a href={props.site}>{props.siteName}</a>
+                </div>
+                : null}
+                {props.phone != "" ? 
+                    <div className={styles.partnerPhone}>
+                        <img src="icons/smallPhone.svg" alt="" style={{width: 24 + "px"}}/>
+                        <p>{props.phone}</p>
+                        <div className={styles.partnerNetworks} style = {{marginLeft: 18 + "px"}}>
+                            {props.whatsAppLink != "" ? <a href={props.whatsAppLink}><img src="icons/whatsApp.svg" alt="" style={{marginRight: 10 + "px"}}/></a> : null}
+                            {props.telegramLink != "" ? <a href={props.telegramLink} ><img src="icons/telegram.svg" alt="" /></a> : null}
+                        </div>
+                    </div>
+                : null}
             </div>
         </span>
     )
@@ -57,9 +71,9 @@ function Partners() {
         let partnersArray = partnersList
 
         if (isOpened == false) {
+            console.log(partnersArray)
             partnersArray = partnersList.slice(0, 4)
         }
-        console.log(partnersArray)
 
         return (
             <div className={styles.partnersSection}>
@@ -102,6 +116,7 @@ function FeedbackForm() {
                 <div className={styles.formHeader}>
                     <p className={styles.formTitle}><span style={{color: '#F46628'}}>СВЯЗАТЬСЯ</span> С ПРЕДСТАВИТЕЛЕМ БРЕНДА</p>
                     <p className={styles.formPS}>Напишите нам, заполнив форму ниже</p>
+                    <p className={styles.formPS}>*** Для того, чтобы стать нашим партнером и представителем DS в Вашем регионе в нижеуказанной форме заполните раздел "Для сотрудничества"</p>
                 </div>
                 <div className={styles.messageForms}>
                     <span className={styles.userInfoForm}>
@@ -110,12 +125,15 @@ function FeedbackForm() {
                         <UserInfo criteria="E-mail*" placeholder="sale@ds.parts.com"/>
                         <UserInfo criteria="Город/населенный пункт" placeholder="г. Благовещенск"/>
                     </span>
-                    <span className={styles.messageForm}>
-                        <p className={styles.userData}>Введите сообщение*</p>
-                        <textarea placeholder="Введите интересующий вопрос..."/>
+                    <span style={{width: 591 + "px"}}>
+                        <span className={styles.messageForm}>
+                            <p className={styles.userData}>Введите сообщение*</p>
+                            <textarea placeholder="Введите интересующий вопрос..."/>
+                        </span>
+                        <UserInfo criteria="***Для сотрудничества" placeholder="Стать партнером"/>
                     </span>
                 </div>
-                <div className={styles.toSend}>
+                <div className={styles.toSend} id="feedback">
                     <button type="submit">Отправить</button>
                     <input className={styles.agree} type="checkbox" /><span className={styles.agreesment}>Отправляя данную форму, я даю свое согласие на оработку своих персональных данных</span>
                 </div>

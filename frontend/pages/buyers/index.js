@@ -20,7 +20,7 @@ function QuestionList() {
                     <p className={styles.titleBuyers}>Предлагаем познакомиться с нашим партнером в России - <a href="http://dsparts-dv.com" style={{color: '#F46628'}}>www.dsparts-dv.com</a></p>
                 </>
             }/>
-            <Answer question="Контроль качества DS" answer = {
+            <Answer id="quelityControl" question="Контроль качества DS" answer = {
                 <p className={styles.answerTopic}>
                     Вся продукция DaSHI сертифицирована в России. Каждая партия проходит полную процедуру
                     таможенного оформления и очистки на территории РФ.
@@ -74,7 +74,7 @@ function QuestionList() {
                         Мы предлагаем вам возможность заменить вышедшую из строя форсунку DS Евро 2 на новую
                         форсунку DS с таким же номером. При этом вы получите значительную скидку.
                     </p>
-                    <a href="#" className={styles.titleBuyers} style={{color: '#F46628'}}>Подробнее</a>
+                    <a href="http://localhost:3000/news" className={styles.titleBuyers} style={{color: '#F46628'}}>Подробнее</a>
                 </>
             }/>
         </>
@@ -108,7 +108,7 @@ function Buyers() {
                     <Menu page='buyers'/>
                     <span>
                         <BuyersInfo/>
-                        <img src="images/buyersImage.jpg" alt="" />
+                        <img src="images/buyersImage.png" alt="" />
                     </span>
                 </div>
             </div>
