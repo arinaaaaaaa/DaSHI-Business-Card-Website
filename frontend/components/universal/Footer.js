@@ -24,8 +24,8 @@ function Navigation() {
             <div className = {styles.productsDS}>
                 <p className = {styles.partnersNote}><span style={{color: '#F46628'}}>ПРОДУКЦИЯ DS</span>, ПРЕДСТАВЛЕННАЯ<br/>ПАРТНЕРАМИ НА</p>
                 <span className = {styles.partnersLogo}>
-                    <img src="/icons/ozonLogo.svg" alt="ozon" />
-                    <img src="/icons/wbLogo.svg" alt="wildberries" />
+                    <img src="/images/ozonLogo.png" alt="ozon" style={{height:31 + "px"}}/>
+                    <img src="/images/wbLogo.png" alt="wildberries" style={{height: 47 + "px"}}/>
                 </span>
             </div>
         </span>

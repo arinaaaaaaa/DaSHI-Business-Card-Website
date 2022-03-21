@@ -9,7 +9,7 @@ function Banner() {
         <div className={styles.bannerSection}>
             <div className={styles.guarantee}>
                 <p className={styles.title}>ГАРАНТИЯ НА<br/>ПРОДУКЦИЮ<span style={{color: '#F46628'}}> DS</span></p>
-                <img src="images/guarantee.svg" alt="" />
+                <img src="images/guarantee.png" alt="" />
             </div>
             <div className={styles.subTitle}>ГАРАНТИЯ</div>
         </div>

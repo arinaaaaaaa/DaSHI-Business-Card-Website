@@ -13,7 +13,8 @@ function Menu(props) {
                     <>
                         <a href="#">Стать партнером DS</a>
                         <a href="#">Запчасти DS в наличии
-                            <span  class="tooltip"><img src="icons/help.svg" alt="" />
+                            <span  class="tooltip">
+                                <span className="tooltipIcon dark" style={{marginLeft: 11 + "px"}}>?</span>
                                 <span class="promt">
                                     На сайтах наших партнеров и представителей DS в разделе «Продукция DaSHI» вы сможете
                                     проследить путь каждой детали – запуск в производство («На заводе»), срок поставки и

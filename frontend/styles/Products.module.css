@@ -5,14 +5,13 @@
     padding: 38px 63px;
     padding-bottom: 57px;
 }
-.linksSection a, .linkSection {
+.linksSection a {
     font-family: 'foundry-boldita';
     color: #2B1A51;
     text-decoration: underline;
 }
 .linksSection, .linkSection{ display: flex; }
-.linksSection a:first-child { margin-right: 64px; }
-.linksSection a img, .linkSection img { margin-left: 12px;}
+.linkSection.tooltip { margin: 0; }
 .productsGrid {
     margin-top: 41px;
     display: grid;

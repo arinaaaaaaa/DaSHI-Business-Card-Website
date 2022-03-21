@@ -3,5 +3,6 @@ from . import views
 
 urlpatterns = [
     path('list/', views.getAllNews),
-    path('banner/', views.getBigBanner)
+    path('banner/', views.getBigBanner),
+    path('topics/', views.getAllTopics)
 ]

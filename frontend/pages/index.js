@@ -73,7 +73,7 @@ function SmallNews(props) {
       <span className={styles.smallNews}>
         <p className={styles.newsTitle}>{props.title}<span style ={{color: '#F46628'}}>{props.special}</span></p>
         <span  class="tooltip">
-          <img src="icons/help.svg" alt="" />
+          <span className={`${props.color} ${"tooltipIcon"}`}>?</span>
           <span class="promt">
             {props.promt}
             {props.link != null ? <a href={props.link}>Подробнее</a> : null}
@@ -100,12 +100,14 @@ function MainPage() {
                 special="ВЫГОДА ДО 30%"
                 promt="Мы предлагаем возможность заменить вышедшую из строя форсунку DS Евро 2, на новую со значительной скидкой. "
                 link = "http://localhost:3000/news"
+                color = "dark"
               />
               <SmallNews
                 title="КОНТРОЛЬ КАЧЕСТВА "
                 special="ПРОДУКЦИИ DS"
                 promt = "Проверить подлинность продукции DS вы можете на сайте официальных представителей в разделе «Проверка подлинности DS / Контроль качества DS». "
                 link="http://localhost:3000/buyers#quelityControl"
+                color = "light"
               />
             </div>
           </div>

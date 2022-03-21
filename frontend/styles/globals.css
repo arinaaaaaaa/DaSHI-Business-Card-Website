@@ -81,7 +81,22 @@ html { background-color:#F6F6F6; }
     display: flex;
     position: relative;
     cursor: pointer;
+    align-items: center;
 }
+.tooltipIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 45px;
+    font-family: 'gilroy';
+    font-size: 14px;
+    color: #9f9f9f;
+}
+.tooltipIcon.dark { background-color: #ddd; }
+.tooltipIcon.light { background-color: #fff; }
 .promt {
     position: absolute;
     z-index: 1;
@@ -96,19 +111,20 @@ html { background-color:#F6F6F6; }
     overflow: auto;
     visibility: hidden;
     margin: 0 auto .4em;
-    padding: .8em;
-    background: rgb(236, 235, 238);
+    padding: 36px;
+    background: #fff;
+    box-shadow: 8px 8px 44px 0px #00000014;
 }
 .promt, .promtText {
-    font-family: 'gilroy';
-    color: #2B1A51;
-    font-size: 80%;
-    line-height: 20px;
+    font-family: 'gilroy-light';
+    color: #757575;
+    font-size: 90%;
+    line-height: 140%;
 }
 .tooltip:before {
     content: "";
     position: absolute;
-    top: .95em;
+    top: 1.3em;
     left: 0;
     right: 0;
     height: 2em;
@@ -123,3 +139,4 @@ html { background-color:#F6F6F6; }
     transition: 0s .2s;
 }
 .tooltip:focus { outline: none; }
+.tooltipIcon:hover { color: #F46628;}

@@ -12,7 +12,7 @@ function ProductItem(props) {
                 <p className={styles.itemTitle}>{props.title}</p>
             </span>
             <span  class="tooltip">
-                <img src="icons/help-light.svg" alt="help"/>
+                <span className="tooltipIcon light">?</span>
                 <span class="promt">
                     {props.promt}
                 </span>
@@ -25,8 +25,8 @@ function ProductsSection() {
     return (
         <div className={styles.productsSection}>
             <div className={styles.linksSection}>
-                <a href="#">УПАКОВКА <span style={{color: '#F46628'}}>DS</span></a>
-                <span className={`${styles.linkSection} ${"tooltip"}`}>КОНТРОЛЬ КАЧЕСТВА<span style={{color: '#F46628'}}>&nbsp;DS</span><img src="icons/help.svg" alt="" />
+                <a href="#" style={{marginRight: 64 + "px"}}>УПАКОВКА <span style={{color: '#F46628'}}>DS</span></a>
+                <span className={`${styles.linkSection} ${"tooltip"}`}><a>КОНТРОЛЬ КАЧЕСТВА<span style={{color: '#F46628'}}>&nbsp;DS</span></a><span className="tooltipIcon dark" style={{marginLeft: 12 + "px", textDecoration: "none"}}>?</span>
                     <span class="promt">
                         Вся продукция DaSHI сертифицирована в России. Каждая партия проходит полную процедуру
                         таможенного оформления и очистки на территории РФ. <a href="http://localhost:3000/buyers">Подробнее</a>
