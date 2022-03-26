@@ -10,7 +10,7 @@ export default function Dropdown({topic, setTopic}) {
     const [topicsList, setTopicsList] = useState(null);
 
     function getTopicsList() {
-        axios('http://localhost:8000/news/topics/', { withCredentials: true })
+        axios(`${process.env.api_hostname}/news/topics/`, { withCredentials: true })
         .then((response) => { 
             setTopicsList(response.data)
         })

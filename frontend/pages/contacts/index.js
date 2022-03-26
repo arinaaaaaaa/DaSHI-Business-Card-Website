@@ -59,7 +59,7 @@ function Partners() {
     const [isOpened, setOpened] = useState(false)
 
     function getPartnersList() {
-        axios('http://localhost:8000/partners/list/', { withCredentials: true })
+        axios(`${process.env.api_hostname}/partners/list/`, { withCredentials: true })
         .then((response) => { 
             setPartnersList(response.data)
         })

@@ -85,7 +85,7 @@ function NewsList() {
     const [newsCount, setNewsCount] = useState(false);
 
     function getNewsList() {
-        axios('http://localhost:8000/news/list/', { withCredentials: true })
+        axios(`${process.env.api_hostname}/news/list/`, { withCredentials: true })
         .then((response) => { 
             setNewsList(response.data)
         })
@@ -123,7 +123,7 @@ function NewsList() {
                     <div className={styles.newsList}>
                         {newsArray.map((item, index) =>
                             <NewsItem
-                                icon={"http://localhost:8000" + item.background}
+                                icon={`${process.env.api_hostname}/${item.background}`}
                                 key={index}
                                 title={item.title}
                                 newsTopic={item.content}
