@@ -6,8 +6,8 @@ function AnswerList(props) {
     let listAnswer = props.list
     return (
         <>
-            {listAnswer.map(item => (
-                <div className={ props.styleClass != 'about' ? styles.listItem : `${styles.listItem} ${styles.listItemAbout}`}>
+            {listAnswer.map((item, index) => (
+                <div key={index} className={ props.styleClass != 'about' ? styles.listItem : `${styles.listItem} ${styles.listItemAbout}`}>
                     <img src="icons/listMarker.svg" alt="" />
                     <p>{item}</p>
                 </div>
@@ -20,8 +20,11 @@ function FileList(props) {
     let listAnswer = props.list
     return (
         <>
-            {listAnswer.map(item => (
-                <div className={styles.listItem}>
+            {listAnswer.map((item, index) => (
+                <div 
+                    className={styles.listItem}
+                    key={index}
+                >
                     <img src="icons/fileMarker.svg" alt="" />
                     <a href={item[0]}>{item[1]}</a>
                 </div>

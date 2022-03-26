@@ -50,8 +50,9 @@ export default function Dropdown({topic, setTopic}) {
                 </div>
                 {isOpen ?
                     <div className={styles.dropdownContent}>
-                        {(topicsList.sort()).map(item => (
+                        {(topicsList.sort()).map((item, index) => (
                             <div className={styles.dropdownItem} 
+                                key={index}
                                 onClick={() => {
                                     startAnimation()
                                     setTopic(item)}}

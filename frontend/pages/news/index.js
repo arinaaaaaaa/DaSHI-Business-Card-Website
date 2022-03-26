@@ -121,9 +121,10 @@ function NewsList() {
                 </div>
                 {newsArray.length != 0 ?
                     <div className={styles.newsList}>
-                        {newsArray.map((item) =>
+                        {newsArray.map((item, index) =>
                             <NewsItem
                                 icon={"http://localhost:8000" + item.background}
+                                key={index}
                                 title={item.title}
                                 newsTopic={item.content}
                                 shortPart={(item.content).length > 268 ? shortPart(item.content) : null}

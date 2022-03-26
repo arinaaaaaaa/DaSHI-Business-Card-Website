@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from "../../styles/components/Components.module.css";
 
 function Menu(props) {
@@ -13,9 +14,9 @@ function Menu(props) {
                     <>
                         <a href="#">Стать партнером DS</a>
                         <a href="#">Запчасти DS в наличии
-                            <span  class="tooltip">
+                            <span  className="tooltip">
                                 <span className="tooltipIcon dark" style={{marginLeft: 11 + "px"}}>?</span>
-                                <span class="promt">
+                                <span className="promt">
                                     На сайтах наших партнеров и представителей DS в разделе «Продукция DaSHI» вы сможете
                                     проследить путь каждой детали – запуск в производство («На заводе»), срок поставки и
                                     местонахождение («В пути»), размещение на складе в России («В наличии»).
@@ -24,23 +25,23 @@ function Menu(props) {
                         </a>
                     </>
                 : menuType == 1 ?
-                    <a href="http://localhost:3000/buyers">Склады DS в России и других странах</a>
+                    <Link href="http://localhost:3000/buyers"><a>Склады DS в России и других странах</a></Link>
                 : menuType == 2 ?
                     <>
-                        <a href="http://localhost:3000/partners">Стать партнером DS</a>
-                        <a href="http://localhost:3000/partners">Пакет "DS+"</a>
-                        <a href="http://localhost:3000/guarantee" style={{marginTop: 20 + 'px'}}>Упаковка DS</a>
+                        <Link href="http://localhost:3000/partners"><a>Стать партнером DS</a></Link>
+                        <Link href="http://localhost:3000/partners"><a>Пакет &quot;DS+&quot;</a></Link>
+                        <Link href="http://localhost:3000/guarantee"><a style={{marginTop: 20 + 'px'}}>Упаковка DS</a></Link>
                     </>
                 : "" }
             </div>
             <div className = {styles.feedbackSection}>
                 <div className={styles.imgLinks}>
-                    <a href="#"><img src="icons/world.svg" alt="" /></a>
-                    <a href="#"><img src="icons/headset.svg" alt="" /></a>
-                    <a href="#"><img src="icons/phone.svg" alt="" /></a>
-                    <a href="#"><img src="icons/mail.svg" alt="" /></a>
+                    <Link href="#"><a><img src="icons/world.svg" alt="" /></a></Link>
+                    <Link href="#"><a><img src="icons/headset.svg" alt="" /></a></Link>
+                    <Link href="#"><a><img src="icons/phone.svg" alt="" /></a></Link>
+                    <Link href="#"><a><img src="icons/mail.svg" alt="" /></a></Link>
                 </div>
-                <a href="#" className={styles.feedbackLink}>Форма обратной связи</a>
+                <Link href="#"><a className={styles.feedbackLink}>Форма обратной связи</a></Link>
             </div>
         </span>
     )

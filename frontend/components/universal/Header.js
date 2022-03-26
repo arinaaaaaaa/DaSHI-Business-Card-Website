@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 import Switch from "react-switch";
 import styles from "../../styles/components/Header.module.css";
 
 function HeaderLinks() {
     return (
         <div className = {styles.linksSection}>
-            <a href="/products" className = {styles.linkItem}>ПРОДУКЦИЯ DaSHI</a>
-            <a href="/buyers" className = {styles.linkItem}>ПОКУПАТЕЛЯМ</a>
-            <a href="/partners" className = {styles.linkItem}>ПАРТНЕРАМ</a>
-            <a href="/about" className = {styles.linkItem}>О DaSHI</a>
+            <Link href="/products"><a className = {styles.linkItem}>ПРОДУКЦИЯ DaSHI</a></Link>
+            <Link href="/buyers"><a className = {styles.linkItem}>ПОКУПАТЕЛЯМ</a></Link>
+            <Link href="/partners"><a className = {styles.linkItem}>ПАРТНЕРАМ</a></Link>
+            <Link href="/about"><a className = {styles.linkItem}>О DaSHI</a></Link>
         </div>
     )
 }
@@ -44,11 +45,13 @@ function LanguageSwitch() {
 function Header() {
     return (
         <div className = {styles.headerNavigation}>
-            <a href="/" className = {styles.logo}>
-                <img src="/icons/LogoIcon.svg" alt="" />
-            </a>
+            <Link href="/">
+                <a className = {styles.logo}>
+                    <img src="/icons/LogoIcon.svg" alt="" />
+                </a>
+            </Link>
             <HeaderLinks/>
-            <div className={styles.contactsLink}><a href="/contacts">КОНТАКТЫ</a></div>
+            <div className={styles.contactsLink}><Link href="/contacts"><a>КОНТАКТЫ</a></Link></div>
             
         </div>
     )

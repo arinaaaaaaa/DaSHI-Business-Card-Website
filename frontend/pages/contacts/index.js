@@ -80,8 +80,9 @@ function Partners() {
                 <div className={styles.partners}>
                     <p className={styles.partnersTitle}>ПАРТНЕРЫ <span style={{color: '#F46628'}}>DaSHI</span> В РОССИИ</p>
                     <div className={styles.partnersList}>
-                        {partnersArray.map((item) =>
+                        {partnersArray.map((item, index) =>
                             <PartnerItem 
+                                key={index}
                                 name={item.name}
                                 location={item.address}
                                 site={item.web}
@@ -116,7 +117,7 @@ function FeedbackForm() {
                 <div className={styles.formHeader}>
                     <p className={styles.formTitle}><span style={{color: '#F46628'}}>СВЯЗАТЬСЯ</span> С ПРЕДСТАВИТЕЛЕМ БРЕНДА</p>
                     <p className={styles.formPS}>Напишите нам, заполнив форму ниже</p>
-                    <p className={styles.formPS}>*** Для того, чтобы стать нашим партнером и представителем DS в Вашем регионе в нижеуказанной форме заполните раздел "Для сотрудничества"</p>
+                    <p className={styles.formPS}>*** Для того, чтобы стать нашим партнером и представителем DS в Вашем регионе в нижеуказанной форме заполните раздел &quot;Для сотрудничества&quot;</p>
                 </div>
                 <div className={styles.messageForms}>
                     <span className={styles.userInfoForm}>

@@ -11,9 +11,9 @@ function ProductItem(props) {
                 <img src={props.imgSrc} alt="" className={styles.productImg}/>
                 <p className={styles.itemTitle}>{props.title}</p>
             </span>
-            <span  class="tooltip">
+            <span  className="tooltip">
                 <span className="tooltipIcon light">?</span>
-                <span class="promt">
+                <span className="promt">
                     {props.promt}
                 </span>
             </span>
@@ -27,7 +27,7 @@ function ProductsSection() {
             <div className={styles.linksSection}>
                 <a href="#" style={{marginRight: 64 + "px"}}>УПАКОВКА <span style={{color: '#F46628'}}>DS</span></a>
                 <span className={`${styles.linkSection} ${"tooltip"}`}><a>КОНТРОЛЬ КАЧЕСТВА<span style={{color: '#F46628'}}>&nbsp;DS</span></a><span className="tooltipIcon dark" style={{marginLeft: 12 + "px", textDecoration: "none"}}>?</span>
-                    <span class="promt">
+                    <span className="promt">
                         Вся продукция DaSHI сертифицирована в России. Каждая партия проходит полную процедуру
                         таможенного оформления и очистки на территории РФ. <a href="http://localhost:3000/buyers">Подробнее</a>
                     </span>
@@ -48,11 +48,11 @@ function ProductsSection() {
                 <ProductItem
                     imgSrc="images/products2.svg"
                     title="Комплектующие к форсункам DS"
-                    promt = "Комплектующие для форсунок DS – широкий спектр комплектующих для форсунок различных
+                    promt = {`Комплектующие для форсунок DS – широкий спектр комплектующих для форсунок различных
                     типов - распылители, штуцеры, клапаны, соленоиды, гайки, шарики, кольца, ремкомплекты.
                     Уточнить стоимость, наличие и сроки поставки интересующего вас товара можно по артикулу
                     (указав номер DS или аналога), оставив заявку через форму обратной связи либо обратившись
-                    в службу клиентской поддержки."
+                    в службу клиентской поддержки.`}
                 />
                 <ProductItem
                     imgSrc="images/products3.svg"
