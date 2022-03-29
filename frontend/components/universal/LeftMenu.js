@@ -27,12 +27,12 @@ function Menu(props) {
                         </Link>
                     </>
                 : menuType == 1 ?
-                    <Link href={`${process.env.api_hostname}/buyers`}><a>Склады DS в России и других странах</a></Link>
+                    <Link href={`${process.env.api_hostname}/buyers/`}><a>Склады DS в России и других странах</a></Link>
                 : menuType == 2 ?
                     <>
-                        <Link href={`${process.env.api_hostname}/partners`}><a>Стать партнером DS</a></Link>
-                        <Link href={`${process.env.api_hostname}/partners`}><a>Пакет &quot;DS+&quot;</a></Link>
-                        <Link href={`${process.env.api_hostname}/guarantee`}><a style={{marginTop: 20 + 'px'}}>Упаковка DS</a></Link>
+                        <Link href={`${process.env.api_hostname}/partners/`}><a>Стать партнером DS</a></Link>
+                        <Link href={`${process.env.api_hostname}/partners/`}><a>Пакет &quot;DS+&quot;</a></Link>
+                        <Link href={`${process.env.api_hostname}/guarantee/`}><a style={{marginTop: 20 + 'px'}}>Упаковка DS</a></Link>
                     </>
                 : "" }
             </div>
