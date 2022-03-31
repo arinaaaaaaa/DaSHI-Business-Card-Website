@@ -11,7 +11,7 @@ function BigNews() {
   const [bannerInfo, setBannerInfo] = useState(null);
 
   function getBanner() {
-    axios('http://localhost:8000/news/banner/', { withCredentials: true })
+    axios(`${process.env.api_hostname}/news/banner/`, { withCredentials: true })
     .then((response) => { 
         setBannerInfo(response.data)
     })
@@ -23,11 +23,11 @@ function BigNews() {
         <div className={styles.bannerSection}>
           <div className={styles.bigNewsSection}>
             <span className={styles.titleSection}>
-              <img src={"http://localhost:8000" + bannerInfo.titleIcon} alt="" style={{width: 34 +"px", height: 44 +"px"}}/>
-              <Link href="http://localhost:3000/news"><a className={styles.newsTitleBanner}>{bannerInfo.title}<br/><span style={{color: '#F46628'}}>{bannerInfo.special}</span></a></Link>
+              <img src={`${process.env.api_hostname}/${bannerInfo.titleIcon}`} alt="" style={{width: 34 +"px", height: 44 +"px"}}/>
+              <Link href={`${process.env.api_hostname}/news`}><a className={styles.newsTitleBanner}>{bannerInfo.title}<br/><span style={{color: '#F46628'}}>{bannerInfo.special}</span></a></Link>
             </span>
             <span className={styles.top}>
-              <img src={"http://localhost:8000" + bannerInfo.subtitleIcon} alt="" style={{width: 25 +"px", height: 25 +"px"}}/>
+              <img src={`${process.env.api_hostname}/${bannerInfo.subtitleIcon}`} alt="" style={{width: 25 +"px", height: 25 +"px"}}/>
               <p>{bannerInfo.subtitle}</p>
             </span>
           </div>
@@ -100,14 +100,14 @@ function MainPage() {
                 title="ЗАМЕНА ВЫШЕДШИХ ИЗ СТРОЯ ФОРСУНОК DS - E2 - "
                 special="ВЫГОДА ДО 30%"
                 promt="Мы предлагаем возможность заменить вышедшую из строя форсунку DS Евро 2, на новую со значительной скидкой. "
-                link = "http://localhost:3000/news"
+                link = {`${process.env.api_hostname}/news`}
                 color = "dark"
               />
               <SmallNews
                 title="КОНТРОЛЬ КАЧЕСТВА "
                 special="ПРОДУКЦИИ DS"
                 promt = "Проверить подлинность продукции DS вы можете на сайте официальных представителей в разделе «Проверка подлинности DS / Контроль качества DS». "
-                link="http://localhost:3000/buyers#quelityControl"
+                link={`${process.env.api_hostname}/buyers#quelityControl`}
                 color = "light"
               />
             </div>
