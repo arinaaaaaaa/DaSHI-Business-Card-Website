@@ -75,7 +75,7 @@ function QuestionList() {
                         Мы предлагаем вам возможность заменить вышедшую из строя форсунку DS Евро 2 на новую
                         форсунку DS с таким же номером. При этом вы получите значительную скидку.
                     </p>
-                    <Link href={`${process.env.api_hostname}/news`}><a className={styles.titleBuyers} style={{color: '#F46628'}}>Подробнее</a></Link>
+                    <Link href="/news"><a className={styles.titleBuyers} style={{color: '#F46628'}}>Подробнее</a></Link>
                 </>
             }/>
         </>
