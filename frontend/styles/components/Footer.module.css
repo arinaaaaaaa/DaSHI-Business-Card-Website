@@ -1,17 +1,24 @@
-.footerSection {
+#footerBox {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #2B1A510D;
+}
+.footerSection {
+    width: 1210px;
     position:relative;
     bottom: 0%;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 92px 112px;
-    background: #2B1A510D;
+    padding-top: 92px;
+    padding-bottom: 92px;
 }
 .logo img { width: 170px; }
 .companyInfo {
     font-size: 15px;
-    font-family: 'gilroy-light';
+    font-family: 'gilroy-regular';
+    font-weight: 600;
     color: #2B1A51;
     margin-top: 110px;
 }
@@ -25,6 +32,7 @@
     color: #2B1A51;
     font-family: 'foundry-boldita';
     font-size: 17px;
+    font-weight: 800;
     text-decoration: none;
     cursor: pointer;
 }
@@ -38,6 +46,7 @@
 }
 .partnersNote {
     font-family: 'foundry-boldita';
+    font-weight: 800;
     line-height: 25.5px;
     color: #2B1A51;
     font-size: 17px;

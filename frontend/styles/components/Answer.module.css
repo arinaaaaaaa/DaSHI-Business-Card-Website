@@ -27,6 +27,7 @@
 .listItem p {
     margin-left: 20px;
     font-family: 'gilroy-light';
+    font-weight: 600;
     font-size: 13px;
     color: #2B1A51;
 }

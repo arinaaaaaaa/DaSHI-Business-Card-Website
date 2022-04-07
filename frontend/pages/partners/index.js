@@ -12,9 +12,9 @@ function PartnersInfo() {
             <div className={styles.partnersHeader}>
                 <p className={styles.sectionTitle}>СТАТЬ ПАРТНЕРОМ <span style={{color: '#F46628'}}>DS</span></p>
                 <span className={styles.partnerTypes}>
-                    <button>DS +</button>
+                    <button className="blueContainerOnHover">DS +</button>
                     <span className="tooltip">
-                        <button style={{margin: 0}} disabled>DS Ultra</button>
+                        <button className="blueContainerOnHover" style={{margin: 0}} disabled>DS Ultra</button>
                         <span className="promt">Раздел находится в разработке</span>
                     </span>
                 </span>

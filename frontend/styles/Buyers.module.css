@@ -19,9 +19,10 @@
 }
 .titleBuyers a { color: #2B1A51; }
 .answerTopic {
-    font-family: 'gilroy-light';
+    font-family: 'gilroy-regular';
     font-size: 15px;
     line-height: 22.5px;
+    font-weight: 400;
     color: #2B1A51;
 }
 .answerTopic a { color: #2B1A51; }

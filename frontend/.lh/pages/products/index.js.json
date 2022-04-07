@@ -1,0 +1,126 @@
+{
+    "sourceFile": "pages/products/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 27,
+            "patches": [
+                {
+                    "date": 1649275698184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1649275714909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     return (\n         <div className={styles.productsSection}>\n             <div className={styles.linksSection}>\n                 <a href=\"#\" className=\"underlined_link\" style={{marginRight: 64 + \"px\"}}>УПАКОВКА <span style={{color: '#F46628'}}>DS</span></a>\n-                <span className={`${styles.linkSection} ${\"tooltip\"}`}><a>КОНТРОЛЬ КАЧЕСТВА<span style={{color: '#F46628'}}>&nbsp;DS</span></a><span className=\"tooltipIcon dark\" style={{marginLeft: 12 + \"px\", textDecoration: \"none\"}}>?</span>\n+                <span className={`${styles.linkSection} ${\"tooltip\"}`}><a className=\"underlined_link\">КОНТРОЛЬ КАЧЕСТВА<span style={{color: '#F46628'}}>&nbsp;DS</span></a><span className=\"tooltipIcon dark\" style={{marginLeft: 12 + \"px\", textDecoration: \"none\"}}>?</span>\n                     <span className=\"promt\">\n                         Вся продукция DaSHI сертифицирована в России. Каждая партия проходит полную процедуру\n                         таможенного оформления и очистки на территории РФ. <a href=\"http://localhost:3000/buyers\">Подробнее</a>\n                     </span>\n"
+                },
+                {
+                    "date": 1649275739542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,13 @@\n     return (\n         <div className={styles.productsSection}>\n             <div className={styles.linksSection}>\n                 <a href=\"#\" className=\"underlined_link\" style={{marginRight: 64 + \"px\"}}>УПАКОВКА <span style={{color: '#F46628'}}>DS</span></a>\n-                <span className={`${styles.linkSection} ${\"tooltip\"}`}><a className=\"underlined_link\">КОНТРОЛЬ КАЧЕСТВА<span style={{color: '#F46628'}}>&nbsp;DS</span></a><span className=\"tooltipIcon dark\" style={{marginLeft: 12 + \"px\", textDecoration: \"none\"}}>?</span>\n+                <span className={`${styles.linkSection} ${\"tooltip\"}`}>\n+                    <a className=\"underlined_link\">КОНТРОЛЬ КАЧЕСТВА\n+                        <span style={{color: '#F46628'}}>&nbsp;DS</span>\n+                    </a>\n+                        <span className=\"tooltipIcon dark\" style={{marginLeft: 12 + \"px\", textDecoration: \"none\"}}>?</span>\n                     <span className=\"promt\">\n                         Вся продукция DaSHI сертифицирована в России. Каждая партия проходит полную процедуру\n                         таможенного оформления и очистки на территории РФ. <a href=\"http://localhost:3000/buyers\">Подробнее</a>\n                     </span>\n"
+                },
+                {
+                    "date": 1649275776540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n                     </a>\n                         <span className=\"tooltipIcon dark\" style={{marginLeft: 12 + \"px\", textDecoration: \"none\"}}>?</span>\n                     <span className=\"promt\">\n                         Вся продукция DaSHI сертифицирована в России. Каждая партия проходит полную процедуру\n-                        таможенного оформления и очистки на территории РФ. <a href=\"http://localhost:3000/buyers\">Подробнее</a>\n+                        таможенного оформления и очистки на территории РФ. <a href=\"localhost:3000/buyers\">Подробнее</a>\n                     </span>\n                 </span>\n             </div>\n             <div className={styles.productsGrid}>\n"
+                },
+                {
+                    "date": 1649359218246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,16 @@\n         </span>\n     )\n }\n \n+function FutureProductItem(props) {\n+    return (\n+        <span className={styles.productItem}>\n+\n+        </span>\n+    )\n+}\n+\n function ProductsSection() {\n     return (\n         <div className={styles.productsSection}>\n             <div className={styles.linksSection}>\n@@ -32,9 +40,9 @@\n                     </a>\n                         <span className=\"tooltipIcon dark\" style={{marginLeft: 12 + \"px\", textDecoration: \"none\"}}>?</span>\n                     <span className=\"promt\">\n                         Вся продукция DaSHI сертифицирована в России. Каждая партия проходит полную процедуру\n-                        таможенного оформления и очистки на территории РФ. <a href=\"localhost:3000/buyers\">Подробнее</a>\n+                        таможенного оформления и очистки на территории РФ. <a href=\"/buyers\">Подробнее</a>\n                     </span>\n                 </span>\n             </div>\n             <div className={styles.productsGrid}>\n"
+                },
+                {
+                    "date": 1649359252632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,8 +76,9 @@\n                     title=\"Запчасти DS\"\n                     promt=\"Плунжерные пары DS, ЦПГ (цилиндро-поршневые группы), фильтры, свечи накала, насосы, ТНВД.\n                     В данный момент данный товар не доступен для заказа\"\n                 />\n+                <FutureProductItem/>\n             </div>\n         </div>\n     )\n }\n"
+                },
+                {
+                    "date": 1649359265902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n \n function FutureProductItem(props) {\n     return (\n         <span className={styles.productItem}>\n-\n+            \n         </span>\n     )\n }\n \n"
+                },
+                {
+                    "date": 1649361773869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,12 @@\n }\n \n function FutureProductItem(props) {\n     return (\n-        <span className={styles.productItem}>\n+        <span \n+            style={{backgroundColor: \"#2B1A51\"}}\n+            className={styles.productItem}\n+        >\n             \n         </span>\n     )\n }\n"
+                },
+                {
+                    "date": 1649361781513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,8 @@\n         <span \n             style={{backgroundColor: \"#2B1A51\"}}\n             className={styles.productItem}\n         >\n-            \n         </span>\n     )\n }\n \n"
+                },
+                {
+                    "date": 1649361788005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,13 +22,13 @@\n }\n \n function FutureProductItem(props) {\n     return (\n-        <span \n+        <div\n             style={{backgroundColor: \"#2B1A51\"}}\n             className={styles.productItem}\n         >\n-        </span>\n+        </div>\n     )\n }\n \n function ProductsSection() {\n"
+                },
+                {
+                    "date": 1649361807609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n \n function FutureProductItem(props) {\n     return (\n         <div\n-            style={{backgroundColor: \"#2B1A51\"}}\n+            style={{backgroundColor: \"#2B1A51 !important\"}}\n             className={styles.productItem}\n         >\n         </div>\n     )\n"
+                },
+                {
+                    "date": 1649361816929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n \n function FutureProductItem(props) {\n     return (\n         <div\n-            style={{backgroundColor: \"#2B1A51 !important\"}}\n+            style={{backgroundColor: \"#2B1A51\"}}\n             className={styles.productItem}\n         >\n         </div>\n     )\n"
+                },
+                {
+                    "date": 1649361827670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n \n function FutureProductItem(props) {\n     return (\n         <div\n-            style={{backgroundColor: \"#2B1A51\"}}\n+            style={{background: \"none\", backgroundColor: \"#2B1A51\"}}\n             className={styles.productItem}\n         >\n         </div>\n     )\n"
+                },
+                {
+                    "date": 1649361834017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n \n function FutureProductItem(props) {\n     return (\n         <div\n-            style={{background: \"none\", backgroundColor: \"#2B1A51\"}}\n+            style={{backgroundColor: \"#2B1A51\"}}\n             className={styles.productItem}\n         >\n         </div>\n     )\n"
+                },
+                {
+                    "date": 1649361844623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,8 @@\n function FutureProductItem(props) {\n     return (\n         <div\n             style={{backgroundColor: \"#2B1A51\"}}\n-            className={styles.productItem}\n         >\n         </div>\n     )\n }\n"
+                },
+                {
+                    "date": 1649361886907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n \n function FutureProductItem(props) {\n     return (\n         <div\n-            style={{backgroundColor: \"#2B1A51\"}}\n+            style={{background: \"#2B1A51\"}}\n         >\n         </div>\n     )\n }\n"
+                },
+                {
+                    "date": 1649361908772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,12 @@\n \n function FutureProductItem(props) {\n     return (\n         <div\n-            style={{background: \"#2B1A51\"}}\n+            style={{\n+                background: \"#2B1A51\",\n+                justifyContent: \"space-between\"\n+            }}\n         >\n         </div>\n     )\n }\n"
+                },
+                {
+                    "date": 1649361915878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,10 @@\n     return (\n         <div\n             style={{\n                 background: \"#2B1A51\",\n-                justifyContent: \"space-between\"\n+                justifyContent: \"center\",\n+                alignContent: \"center\"\n             }}\n         >\n         </div>\n     )\n"
+                },
+                {
+                    "date": 1649361924975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n                 justifyContent: \"center\",\n                 alignContent: \"center\"\n             }}\n         >\n+            <img></img>\n         </div>\n     )\n }\n \n"
+                },
+                {
+                    "date": 1649361990303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n                 justifyContent: \"center\",\n                 alignContent: \"center\"\n             }}\n         >\n-            <img></img>\n+            <img src=\"/icons/futureIcon.svg\"></img>\n         </div>\n     )\n }\n \n"
+                },
+                {
+                    "date": 1649362048901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,10 @@\n         <div\n             style={{\n                 background: \"#2B1A51\",\n                 justifyContent: \"center\",\n-                alignContent: \"center\"\n+                alignContent: \"center\",\n+                display: \"flex\"\n             }}\n         >\n             <img src=\"/icons/futureIcon.svg\"></img>\n         </div>\n"
+                },
+                {
+                    "date": 1649362073374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n                 alignContent: \"center\",\n                 display: \"flex\"\n             }}\n         >\n-            <img src=\"/icons/futureIcon.svg\"></img>\n+            <img width=\"68px\" src=\"/icons/futureIcon.svg\"></img>\n         </div>\n     )\n }\n \n"
+                },
+                {
+                    "date": 1649362085829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,8 +84,9 @@\n                     promt=\"Плунжерные пары DS, ЦПГ (цилиндро-поршневые группы), фильтры, свечи накала, насосы, ТНВД.\n                     В данный момент данный товар не доступен для заказа\"\n                 />\n                 <FutureProductItem/>\n+                <FutureProductItem/>\n             </div>\n         </div>\n     )\n }\n"
+                },
+                {
+                    "date": 1649368699336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n         <div className={styles.productsSection}>\n             <div className={styles.linksSection}>\n                 <a href=\"#\" className=\"underlined_link\" style={{marginRight: 64 + \"px\"}}>УПАКОВКА <span style={{color: '#F46628'}}>DS</span></a>\n                 <span className={`${styles.linkSection} ${\"tooltip\"}`}>\n-                    <a className=\"underlined_link\">КОНТРОЛЬ КАЧЕСТВА\n+                    <a>КОНТРОЛЬ КАЧЕСТВА\n                         <span style={{color: '#F46628'}}>&nbsp;DS</span>\n                     </a>\n                         <span className=\"tooltipIcon dark\" style={{marginLeft: 12 + \"px\", textDecoration: \"none\"}}>?</span>\n                     <span className=\"promt\">\n@@ -84,9 +84,8 @@\n                     promt=\"Плунжерные пары DS, ЦПГ (цилиндро-поршневые группы), фильтры, свечи накала, насосы, ТНВД.\n                     В данный момент данный товар не доступен для заказа\"\n                 />\n                 <FutureProductItem/>\n-                <FutureProductItem/>\n             </div>\n         </div>\n     )\n }\n"
+                },
+                {
+                    "date": 1649368715015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     return (\n         <div className={styles.productsSection}>\n             <div className={styles.linksSection}>\n                 <a href=\"#\" className=\"underlined_link\" style={{marginRight: 64 + \"px\"}}>УПАКОВКА <span style={{color: '#F46628'}}>DS</span></a>\n-                <span className={`${styles.linkSection} ${\"tooltip\"}`}>\n+                <span className={`${styles.linkSection} tooltip`}>\n                     <a>КОНТРОЛЬ КАЧЕСТВА\n                         <span style={{color: '#F46628'}}>&nbsp;DS</span>\n                     </a>\n                         <span className=\"tooltipIcon dark\" style={{marginLeft: 12 + \"px\", textDecoration: \"none\"}}>?</span>\n"
+                },
+                {
+                    "date": 1649369055183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n                     </a>\n                         <span className=\"tooltipIcon dark\" style={{marginLeft: 12 + \"px\", textDecoration: \"none\"}}>?</span>\n                     <span className=\"promt\">\n                         Вся продукция DaSHI сертифицирована в России. Каждая партия проходит полную процедуру\n-                        таможенного оформления и очистки на территории РФ. <a href=\"/buyers\">Подробнее</a>\n+                        таможенного оформления и очистки на территории РФ. <Link><a href=\"/buyers\">Подробнее</a></Link>\n                     </span>\n                 </span>\n             </div>\n             <div className={styles.productsGrid}>\n"
+                },
+                {
+                    "date": 1649369064316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n                     </a>\n                         <span className=\"tooltipIcon dark\" style={{marginLeft: 12 + \"px\", textDecoration: \"none\"}}>?</span>\n                     <span className=\"promt\">\n                         Вся продукция DaSHI сертифицирована в России. Каждая партия проходит полную процедуру\n-                        таможенного оформления и очистки на территории РФ. <Link><a href=\"/buyers\">Подробнее</a></Link>\n+                        таможенного оформления и очистки на территории РФ. <Link href=\"/buyers\"><a>Подробнее</a></Link>\n                     </span>\n                 </span>\n             </div>\n             <div className={styles.productsGrid}>\n"
+                },
+                {
+                    "date": 1649369085687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import Footer from \"../../components/universal/Footer.js\";\n import Question from \"../../components/universal/Question.js\";\n import Menu from \"../../components/universal/LeftMenu.js\";\n import styles from \"../../styles/Products.module.css\";\n+import Link from \"next/link\";\n \n function ProductItem(props) {\n     return (\n         <span className={styles.productItem}>\n"
+                }
+            ],
+            "date": 1649275698184,
+            "name": "Commit-0",
+            "content": "import Header from \"../../components/universal/Header.js\"\nimport Footer from \"../../components/universal/Footer.js\";\nimport Question from \"../../components/universal/Question.js\";\nimport Menu from \"../../components/universal/LeftMenu.js\";\nimport styles from \"../../styles/Products.module.css\";\n\nfunction ProductItem(props) {\n    return (\n        <span className={styles.productItem}>\n            <span>\n                <img src={props.imgSrc} alt=\"\" className={styles.productImg}/>\n                <p className={styles.itemTitle}>{props.title}</p>\n            </span>\n            <span  className=\"tooltip\">\n                <span className=\"tooltipIcon light\">?</span>\n                <span className=\"promt\">\n                    {props.promt}\n                </span>\n            </span>\n        </span>\n    )\n}\n\nfunction ProductsSection() {\n    return (\n        <div className={styles.productsSection}>\n            <div className={styles.linksSection}>\n                <a href=\"#\" className=\"underlined_link\" style={{marginRight: 64 + \"px\"}}>УПАКОВКА <span style={{color: '#F46628'}}>DS</span></a>\n                <span className={`${styles.linkSection} ${\"tooltip\"}`}><a>КОНТРОЛЬ КАЧЕСТВА<span style={{color: '#F46628'}}>&nbsp;DS</span></a><span className=\"tooltipIcon dark\" style={{marginLeft: 12 + \"px\", textDecoration: \"none\"}}>?</span>\n                    <span className=\"promt\">\n                        Вся продукция DaSHI сертифицирована в России. Каждая партия проходит полную процедуру\n                        таможенного оформления и очистки на территории РФ. <a href=\"http://localhost:3000/buyers\">Подробнее</a>\n                    </span>\n                </span>\n            </div>\n            <div className={styles.productsGrid}>\n                <ProductItem\n                    imgSrc=\"images/products1.svg\"\n                    title=\"Форсунки топливные DS\"\n                    promt=\"Форсунки топливные DS (DaSHI) Евро 2, 3, 4, 5 – высококачественные оригинальные форсунки,\n                    обеспечивающие экономичный расход топлива. Форсунки DaSHI используются в качестве\n                    аналогов форсунок таких брендов, как Bosch, Denso, Delphi, Weichai, Yuchai и др. Мы\n                    реализуем форсунки для бензиновых и дизельных двигателей системы Common Rail (CR).\n                    Уточнить стоимость, наличие и сроки поставки интересующего вас товара можно по артикулу\n                    (указав номер DS или аналога), оставив заявку через форму обратной связи либо обратившись\n                    в службу клиентской поддержки.\"\n                />\n                <ProductItem\n                    imgSrc=\"images/products2.svg\"\n                    title=\"Комплектующие к форсункам DS\"\n                    promt = {`Комплектующие для форсунок DS – широкий спектр комплектующих для форсунок различных\n                    типов - распылители, штуцеры, клапаны, соленоиды, гайки, шарики, кольца, ремкомплекты.\n                    Уточнить стоимость, наличие и сроки поставки интересующего вас товара можно по артикулу\n                    (указав номер DS или аналога), оставив заявку через форму обратной связи либо обратившись\n                    в службу клиентской поддержки.`}\n                />\n                <ProductItem\n                    imgSrc=\"images/products3.svg\"\n                    title=\"Комплекты переделки DS\"\n                    promt=\"В данный момент данный товар не доступен для заказа.\"\n                />\n                <ProductItem\n                    imgSrc=\"images/products1.svg\"\n                    title=\"Запчасти DS\"\n                    promt=\"Плунжерные пары DS, ЦПГ (цилиндро-поршневые группы), фильтры, свечи накала, насосы, ТНВД.\n                    В данный момент данный товар не доступен для заказа\"\n                />\n            </div>\n        </div>\n    )\n}\n\nfunction Banners() {\n    return (\n        <>\n            <Header/>\n            <Question/>\n            <div className=\"contentSection\">\n                <div className=\"content\">\n                    <Menu page='products'/>\n                    <ProductsSection/>\n                </div>\n            </div>\n            <Footer/>\n        </>\n    )\n}\n\nexport default Banners;"
+        }
+    ]
+}

@@ -6,10 +6,10 @@ import styles from "../../styles/components/Header.module.css";
 function HeaderLinks() {
     return (
         <div className = {styles.linksSection}>
-            <Link href="/products"><a className = {styles.linkItem}>ПРОДУКЦИЯ DaSHI</a></Link>
-            <Link href="/buyers"><a className = {styles.linkItem}>ПОКУПАТЕЛЯМ</a></Link>
-            <Link href="/partners"><a className = {styles.linkItem}>ПАРТНЕРАМ</a></Link>
-            <Link href="/about"><a className = {styles.linkItem}>О DaSHI</a></Link>
+            <Link href="/products"><a className={`${styles.linkItem} underlined_link`}>ПРОДУКЦИЯ DaSHI</a></Link>
+            <Link href="/buyers"><a className = {`${styles.linkItem} underlined_link`}>ПОКУПАТЕЛЯМ</a></Link>
+            <Link href="/partners"><a className = {`${styles.linkItem} underlined_link`}>ПАРТНЕРАМ</a></Link>
+            <Link href="/about"><a className = {`${styles.linkItem} underlined_link`}>О DaSHI</a></Link>
         </div>
     )
 }
@@ -51,7 +51,7 @@ function Header() {
                 </a>
             </Link>
             <HeaderLinks/>
-            <div className={styles.contactsLink}><Link href="/contacts"><a>КОНТАКТЫ</a></Link></div>
+            <div className={styles.contactsLink}><Link href="/contacts"><a className='underlined_link'>КОНТАКТЫ</a></Link></div>
             
         </div>
     )

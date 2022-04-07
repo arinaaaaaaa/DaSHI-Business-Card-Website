@@ -1,0 +1,90 @@
+{
+    "sourceFile": "styles/Guarantee.module.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1649366578574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1649366596834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     background-color: #fff;\n }\n .guarantee {\n     position: absolute;\n-    width: 100%;\n+    width: 1210px;\n     height: 100%;\n     display: flex;\n     justify-content: space-between;\n     box-sizing: border-box;\n"
+                },
+                {
+                    "date": 1649366604517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n .bannerSection {\n     position: relative;\n+    display: flex;\n+    justify-content: center;\n     width: 100%;\n     height: 346px;\n     margin-top: 50px;\n     margin-bottom: 100px;\n"
+                },
+                {
+                    "date": 1649366665615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,8 @@\n     font-size: 160px;\n     color: #F6F6F6;\n     position: absolute;\n     bottom: -48px;\n-    left: 107px;\n }\n .wrapper { \n     display: flex;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1649366734154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .bannerSection {\n     position: relative;\n     display: flex;\n-    justify-content: center;\n+    justify-content: space-between;\n     width: 100%;\n     height: 346px;\n     margin-top: 50px;\n     margin-bottom: 100px;\n"
+                },
+                {
+                    "date": 1649366810124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .bannerSection {\n     position: relative;\n     display: flex;\n-    justify-content: space-between;\n+    justify-content: center;\n     width: 100%;\n     height: 346px;\n     margin-top: 50px;\n     margin-bottom: 100px;\n@@ -19,9 +19,9 @@\n     padding-bottom: 78px;\n     padding-right: 0;\n     z-index: 1;\n }\n-.guarantee img {\n+.bannerSection img {\n     position: relative;\n     top: -134px;\n     right: -90px;\n     height: 480px;\n"
+                },
+                {
+                    "date": 1649366820119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,11 +21,10 @@\n     z-index: 1;\n }\n .bannerSection img {\n     position: relative;\n-    top: -134px;\n     right: -90px;\n-    height: 480px;\n+\n }\n .title {\n     font-family: 'foundry-boldita';\n     font-size: 43px;\n"
+                },
+                {
+                    "date": 1649366857609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,11 +20,10 @@\n     padding-right: 0;\n     z-index: 1;\n }\n .bannerSection img {\n-    position: relative;\n+    position: absolute;\n     right: -90px;\n-\n }\n .title {\n     font-family: 'foundry-boldita';\n     font-size: 43px;\n"
+                },
+                {
+                    "date": 1649366870176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,12 @@\n     padding-right: 0;\n     z-index: 1;\n }\n .bannerSection img {\n-    position: absolute;\n+    position: relative;\n+    top: -134px;\n     right: -90px;\n+    height: 480px;\n }\n .title {\n     font-family: 'foundry-boldita';\n     font-size: 43px;\n"
+                },
+                {
+                    "date": 1649366876136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n }\n .bannerSection img {\n     position: relative;\n     top: -134px;\n-    right: -90px;\n+    right: 0px;\n     height: 480px;\n }\n .title {\n     font-family: 'foundry-boldita';\n"
+                },
+                {
+                    "date": 1649366905384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n     padding-right: 0;\n     z-index: 1;\n }\n .bannerSection img {\n-    position: relative;\n-    top: -134px;\n+    position: absolute;\n+    /* top: -134px; */\n     right: 0px;\n     height: 480px;\n }\n .title {\n"
+                },
+                {
+                    "date": 1649366911398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     z-index: 1;\n }\n .bannerSection img {\n     position: absolute;\n-    /* top: -134px; */\n+    top: -134px;\n     right: 0px;\n     height: 480px;\n }\n .title {\n"
+                },
+                {
+                    "date": 1649366931165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     z-index: 1;\n }\n .bannerSection img {\n     position: absolute;\n-    top: -134px;\n+    /* top: -134px; */\n     right: 0px;\n     height: 480px;\n }\n .title {\n"
+                },
+                {
+                    "date": 1649366937176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     z-index: 1;\n }\n .bannerSection img {\n     position: absolute;\n-    /* top: -134px; */\n+    top: -100px;\n     right: 0px;\n     height: 480px;\n }\n .title {\n"
+                },
+                {
+                    "date": 1649366942425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     z-index: 1;\n }\n .bannerSection img {\n     position: absolute;\n-    top: -100px;\n+    top: -80px;\n     right: 0px;\n     height: 480px;\n }\n .title {\n"
+                },
+                {
+                    "date": 1649367130311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     z-index: 1;\n }\n .bannerSection img {\n     position: absolute;\n-    top: -80px;\n+    top: -60px;\n     right: 0px;\n     height: 480px;\n }\n .title {\n@@ -54,8 +54,9 @@\n     width: 1000px;\n     font-family: 'gilroy-regular';\n     font-size: 21px;\n     line-height: 31.5px;\n+    font-weight: 600;\n     color: #2B1A51;\n     margin-bottom: 60px;\n }\n .ruleItem { \n"
+                },
+                {
+                    "date": 1649367165316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n     width: 1210px;\n     margin-bottom: 100px;\n }\n .rules {\n-    width: 1000px;\n+    width: 1100px;\n     font-family: 'gilroy-regular';\n     font-size: 21px;\n     line-height: 31.5px;\n     font-weight: 600;\n"
+                },
+                {
+                    "date": 1649367222295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,8 +72,9 @@\n }\n .ruleSection img { margin-left: 200px; }\n .ruleSection p {\n     font-family: 'gilroy';\n+    font-weight: 800;\n     font-size: 17px;\n     line-height: 25.5px;\n     color: #2B1A51;\n }\n"
+                },
+                {
+                    "date": 1649367267576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,8 +103,9 @@\n }\n .packageExample p {\n     margin-top: 18px;\n     font-family: 'gilroy-regular';\n+    font-weight: 600;\n     font-size: 13px;\n     line-height: 19.5px;\n     color: #2B1A51;\n }\n"
+                }
+            ],
+            "date": 1649366578574,
+            "name": "Commit-0",
+            "content": ".bannerSection {\n    position: relative;\n    width: 100%;\n    height: 346px;\n    margin-top: 50px;\n    margin-bottom: 100px;\n    background-color: #fff;\n}\n.guarantee {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    justify-content: space-between;\n    box-sizing: border-box;\n    padding-top: 78px;\n    padding-bottom: 78px;\n    padding-right: 0;\n    z-index: 1;\n}\n.guarantee img {\n    position: relative;\n    top: -134px;\n    right: -90px;\n    height: 480px;\n}\n.title {\n    font-family: 'foundry-boldita';\n    font-size: 43px;\n    line-height: 51.6px;\n    color: #2B1A51;\n}\n.subTitle {\n    font-family: 'foundry-boldita';\n    font-size: 160px;\n    color: #F6F6F6;\n    position: absolute;\n    bottom: -48px;\n    left: 107px;\n}\n.wrapper { \n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-top: 100px;\n}\n.rulesSection { \n    width: 1210px;\n    margin-bottom: 100px;\n}\n.rules {\n    width: 1000px;\n    font-family: 'gilroy-regular';\n    font-size: 21px;\n    line-height: 31.5px;\n    color: #2B1A51;\n    margin-bottom: 60px;\n}\n.ruleItem { \n    width: 100%;\n    box-sizing: border-box;\n    padding: 30px 0px;\n    border-bottom: 1px solid #CBCBCB;\n}\n.ruleItem:last-child { border-bottom: none;}\n.ruleSection {\n    display: flex;\n    justify-content: space-between;\n}\n.ruleSection img { margin-left: 200px; }\n.ruleSection p {\n    font-family: 'gilroy';\n    font-size: 17px;\n    line-height: 25.5px;\n    color: #2B1A51;\n}\n.desc1 { \n    box-sizing: border-box;\n    padding-left: 40px;\n    margin-top: 30px;\n}\n.documentList {\n    list-style-position: inside;\n    list-style-image: url(\"../public/icons/listMarkerOrange.svg\");\n    font-family: 'gilroy';\n    font-size: 17px;\n    line-height: 25.5px;\n    color: #2B1A51;\n}\n.documentList li:first-child { margin-bottom: 20px; }\n.documentList a { color: #2B1A51; }\n.documentList p { padding-left: 15px; }\n.packageSection {\n    margin-top: 40px;\n    display: grid;\n    grid-template-columns: repeat(2, 592px);\n    column-gap: 26px;\n    row-gap: 30px;\n}\n.packageExample p {\n    margin-top: 18px;\n    font-family: 'gilroy-regular';\n    font-size: 13px;\n    line-height: 19.5px;\n    color: #2B1A51;\n}\n.feedbackSection {\n    position: relative;\n    width: 1210px;\n    box-sizing: border-box;\n    padding: 81px 103px;\n    background-color: #ECEBEE;\n    margin-bottom: 100px;\n}\n.background {\n    position: absolute;\n    right: 0px;\n    top: 36px;\n}\n.feedbackSection p {\n    font-family: 'gilroy';\n    font-size: 25px;\n    line-height: 37.5px;\n    color: #2B1A51;\n    margin-bottom: 50px;\n}\n.feedbackList {\n    display: grid;\n    grid-template-columns: repeat(3, 315px);\n    column-gap: 29px;\n}\n.feedbackItem {\n    background-color: #fff;\n    box-sizing: border-box;\n    padding: 46px 43px;\n    padding-bottom: 29px;\n}\n.feedbackItem p {\n    font-size: 13px;\n    line-height: 19.5px;\n    margin: 0;\n    margin-top: 32px;\n}\n.feedbackItem a { color: #F46628; }"
+        }
+    ]
+}

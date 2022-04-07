@@ -1,0 +1,46 @@
+{
+    "sourceFile": "components/universal/Footer.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1648990189877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1648990197041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n function CompanyInfo() {\n     return (\n         <span>\n             <Link href=\"/\"><a className={styles.logo}><img src=\"icons/LogoIcon.svg\" alt=\"Logo\" /></a></Link>\n-            <p className={styles.companyInfo}>© 2019-2022 ООО «Da Shi».<br/>Продукция сертифицирована.<br/>Копирование изделий запрещено. </p>\n+            <p className={styles.companyInfo}>© 2019-2022 ООО «Da SHI».<br/>Продукция сертифицирована.<br/>Копирование изделий запрещено. </p>\n         </span>\n     )\n }\n \n"
+                },
+                {
+                    "date": 1649358151258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,14 +14,14 @@\n function Navigation() {\n     return (\n         <span>\n             <div className = {styles.linksSection}>\n-                <Link href=\"/contacts\"><a>КОНТАКТЫ</a></Link>\n-                <Link href=\"/products\"><a>ПРОДУКЦИЯ DaSHI</a></Link>\n-                <Link href=\"/partners\"><a>ПАРТНЕРАМ</a></Link>\n-                <Link href=\"/contacts#feedback\"><a>НАПИШИТЕ НАМ</a></Link>\n-                <Link href=\"/buyers\"><a>ПОКУПАТЕЛЯМ</a></Link>\n-                <Link href=\"/about\"><a>О DaSHI</a></Link>\n+                <Link className=\"underlined_link\" href=\"/contacts\"><a>КОНТАКТЫ</a></Link>\n+                <Link className=\"underlined_link\" href=\"/products\"><a>ПРОДУКЦИЯ DaSHI</a></Link>\n+                <Link className=\"underlined_link\" href=\"/partners\"><a>ПАРТНЕРАМ</a></Link>\n+                <Link className=\"underlined_link\" href=\"/contacts#feedback\"><a>НАПИШИТЕ НАМ</a></Link>\n+                <Link className=\"underlined_link\" href=\"/buyers\"><a>ПОКУПАТЕЛЯМ</a></Link>\n+                <Link className=\"underlined_link\" href=\"/about\"><a>О DaSHI</a></Link>\n             </div>\n             <div className = {styles.productsDS}>\n                 <p className = {styles.partnersNote}><span style={{color: '#F46628'}}>ПРОДУКЦИЯ DS</span>, ПРЕДСТАВЛЕННАЯ<br/>ПАРТНЕРАМИ НА</p>\n                 <span className = {styles.partnersLogo}>\n"
+                },
+                {
+                    "date": 1649358184857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,14 +14,14 @@\n function Navigation() {\n     return (\n         <span>\n             <div className = {styles.linksSection}>\n-                <Link className=\"underlined_link\" href=\"/contacts\"><a>КОНТАКТЫ</a></Link>\n-                <Link className=\"underlined_link\" href=\"/products\"><a>ПРОДУКЦИЯ DaSHI</a></Link>\n-                <Link className=\"underlined_link\" href=\"/partners\"><a>ПАРТНЕРАМ</a></Link>\n-                <Link className=\"underlined_link\" href=\"/contacts#feedback\"><a>НАПИШИТЕ НАМ</a></Link>\n-                <Link className=\"underlined_link\" href=\"/buyers\"><a>ПОКУПАТЕЛЯМ</a></Link>\n-                <Link className=\"underlined_link\" href=\"/about\"><a>О DaSHI</a></Link>\n+                <Link  href=\"/contacts\"><a className=\"underlined_link\">КОНТАКТЫ</a></Link>\n+                <Link  href=\"/products\"><a className=\"underlined_link\">ПРОДУКЦИЯ DaSHI</a></Link>\n+                <Link  href=\"/partners\"><a className=\"underlined_link\">ПАРТНЕРАМ</a></Link>\n+                <Link  href=\"/contacts#feedback\"><a className=\"underlined_link\">НАПИШИТЕ НАМ</a></Link>\n+                <Link  href=\"/buyers\"><a className=\"underlined_link\">ПОКУПАТЕЛЯМ</a></Link>\n+                <Link  href=\"/about\"><a className=\"underlined_link\">О DaSHI</a></Link>\n             </div>\n             <div className = {styles.productsDS}>\n                 <p className = {styles.partnersNote}><span style={{color: '#F46628'}}>ПРОДУКЦИЯ DS</span>, ПРЕДСТАВЛЕННАЯ<br/>ПАРТНЕРАМИ НА</p>\n                 <span className = {styles.partnersLogo}>\n"
+                },
+                {
+                    "date": 1649362675932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n }\n \n function Footer() {\n     return (\n-        <footer className={styles.footerSection}>\n+        <footer>\n             <CompanyInfo/>\n             <Navigation/>\n         </footer>\n     )\n"
+                },
+                {
+                    "date": 1649362690910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,10 +35,12 @@\n \n function Footer() {\n     return (\n         <footer>\n-            <CompanyInfo/>\n-            <Navigation/>\n+            <div>\n+                <CompanyInfo/>\n+                <Navigation/>\n+            </div>\n         </footer>\n     )\n }\n \n"
+                },
+                {
+                    "date": 1649362696223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n \n function Footer() {\n     return (\n         <footer>\n-            <div>\n+            <div className={styles.footerSection}>\n                 <CompanyInfo/>\n                 <Navigation/>\n             </div>\n         </footer>\n"
+                },
+                {
+                    "date": 1649362762361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n }\n \n function Footer() {\n     return (\n-        <footer>\n+        <footer id={styles.footerBox}>\n             <div className={styles.footerSection}>\n                 <CompanyInfo/>\n                 <Navigation/>\n             </div>\n"
+                }
+            ],
+            "date": 1648990189877,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport Link from 'next/link';\nimport styles from \"../../styles/components/Footer.module.css\";\n\nfunction CompanyInfo() {\n    return (\n        <span>\n            <Link href=\"/\"><a className={styles.logo}><img src=\"icons/LogoIcon.svg\" alt=\"Logo\" /></a></Link>\n            <p className={styles.companyInfo}>© 2019-2022 ООО «Da Shi».<br/>Продукция сертифицирована.<br/>Копирование изделий запрещено. </p>\n        </span>\n    )\n}\n\nfunction Navigation() {\n    return (\n        <span>\n            <div className = {styles.linksSection}>\n                <Link href=\"/contacts\"><a>КОНТАКТЫ</a></Link>\n                <Link href=\"/products\"><a>ПРОДУКЦИЯ DaSHI</a></Link>\n                <Link href=\"/partners\"><a>ПАРТНЕРАМ</a></Link>\n                <Link href=\"/contacts#feedback\"><a>НАПИШИТЕ НАМ</a></Link>\n                <Link href=\"/buyers\"><a>ПОКУПАТЕЛЯМ</a></Link>\n                <Link href=\"/about\"><a>О DaSHI</a></Link>\n            </div>\n            <div className = {styles.productsDS}>\n                <p className = {styles.partnersNote}><span style={{color: '#F46628'}}>ПРОДУКЦИЯ DS</span>, ПРЕДСТАВЛЕННАЯ<br/>ПАРТНЕРАМИ НА</p>\n                <span className = {styles.partnersLogo}>\n                    <img src=\"/images/ozonLogo.png\" alt=\"ozon\" style={{height:31 + \"px\"}}/>\n                    <img src=\"/images/wbLogo.png\" alt=\"wildberries\" style={{height: 47 + \"px\"}}/>\n                </span>\n            </div>\n        </span>\n    )\n}\n\nfunction Footer() {\n    return (\n        <footer className={styles.footerSection}>\n            <CompanyInfo/>\n            <Navigation/>\n        </footer>\n    )\n}\n\nexport default Footer;"
+        }
+    ]
+}

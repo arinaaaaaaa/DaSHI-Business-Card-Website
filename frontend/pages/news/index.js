@@ -53,7 +53,7 @@ function NewsItem(props) {
         <span className={styles.newsItem}>
             <span className={styles.newsImage}>
                 <img src={props.icon} style = {{height: 233 + "px", width: 386 + "px"}} alt="" />
-                <img className={styles.maskImg} src="images/maskNews.svg" alt="" />
+                <img className={styles.maskImg} src="/images/maskNews.svg" alt="" />
             </span>
             <div className={styles.newsWrapper}>
                 <span className={styles.information}>
@@ -70,7 +70,7 @@ function NewsItem(props) {
                     {props.shortPart ? 
                         <button className={styles.showMore} onClick={() => startAnimation()}>
                             {!fullNew ? "Читать полностью" : "Скрыть новость"}
-                            <animated.img src="icons/showAnswer.svg" alt="" style={arrowRotate}/>
+                            <animated.img src="/icons/showAnswer.svg" alt="" style={arrowRotate}/>
                         </button>
                     : null }
                 </span>
@@ -114,7 +114,7 @@ function NewsList() {
                     <Dropdown topic = {topic} setTopic = {setTopic}/>
                     {topic != "" ?
                         <button className={styles.clear} onClick={() => setTopic("")}>
-                            <img src="icons/check.svg" alt="" />
+                            <img src="/icons/check.svg" alt="" />
                             СБРОСИТЬ
                         </button>
                     : null }

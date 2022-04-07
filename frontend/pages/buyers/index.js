@@ -18,7 +18,7 @@ function QuestionList() {
                         <img src="icons/buyersAnswer2.svg" alt="" />
                         <img src="icons/buyersAnswer3.svg" alt="" />
                     </span>
-                    <p className={styles.titleBuyers}>Предлагаем познакомиться с нашим партнером в России - <Link href="http://dsparts-dv.com"><a style={{color: '#F46628'}}>www.dsparts-dv.com</a></Link></p>
+                    <p className={styles.titleBuyers}>Предлагаем познакомиться с нашим партнером в России - <Link href="http://dsparts-dv.com"><a style={{color: '#F46628'}} className="underlined_link">www.dsparts-dv.com</a></Link></p>
                 </>
             }/>
             <Answer id="quelityControl" question="Контроль качества DS" answer = {
@@ -29,7 +29,7 @@ function QuestionList() {
                     разделе «Проверка подлинности DS / Контроль качества DS». Для этого в специальное поле
                     необходимо ввести код (11-разрядный идентификационный цифровой или буквенно-
                     числовой код), присвоенный детали, либо отсканировать QR-код. Вы также можете отправить
-                    запрос в <Link href="#"><a>службу клиентской поддержки</a></Link>.
+                    запрос в <Link href="#"><a className="underlined_link">службу клиентской поддержки</a></Link>.
                 </p>
             }/>
             <Answer question="Гарантия на продукцию DS" answer = {
@@ -38,15 +38,15 @@ function QuestionList() {
                         При обращении по гарантийному случаю или при оформлении претензии необходимо следовать
                         определенным правилам.
                     </p>
-                    <Link href="/guarantee"><a className={styles.titleBuyers} style={{color: '#F46628'}}>Подробнее</a></Link>
+                    <Link href="/guarantee"><a className={`${styles.titleBuyers} underlined_link`} style={{color: '#F46628'}}>Подробнее</a></Link>
                 </>
             }/>
             <Answer question="Сервис DS. Экспресс-доставка" answer = {
                 <>
                     <p className={styles.answerTopic}>
                         В случае возникновения экстренной ситуации или детали необходимы срочно, вы можете
-                        обратиться для заказа экспресс-доставки, связавшись по <Link href="#"><a>форме обратной связи</a></Link>, либо
-                        через <Link  href="#"><a>службу клиентской поддержки</a></Link>. Мы уточним такую возможность для вашего населенного пункта и
+                        обратиться для заказа экспресс-доставки, связавшись по <Link href="#"><a style={{color: "#F46628"}} className="underlined_link">форме обратной связи</a></Link>, либо
+                        через <Link  href="#"><a className="underlined_link" style={{color: "#F46628"}}>службу клиентской поддержки</a></Link>. Мы уточним такую возможность для вашего населенного пункта и
                         организуем быструю доставку деталей из ближайшего к Вам склада с продукцией DasHI.
                     </p>
                 </>
@@ -58,7 +58,7 @@ function QuestionList() {
                         провести экспресс-диагностику детали на оборудовании DS со скидкой до 50%.
                     </p>
                     <p className={styles.answerTopic} style={{marginBottom: 10 + "px", marginTop: 10 + "px"}}>
-                        Свяжитесь с нами через <Link href="#"><a href="#">форму обратной связи</a></Link>, либо через <Link href="#"><a>службу клиентской поддержки</a></Link> и мы
+                        Свяжитесь с нами через <Link href="#"><a style={{color: "#F46628"}} href="#" className="underlined_link">форму обратной связи</a></Link>, либо через <Link href="#"><a className="underlined_link" style={{color: "#F46628"}}>службу клиентской поддержки</a></Link> и мы
                         уточним данную возможность для вашего населенного пункта и сориентируем о ближайшем к
                         Вам месте расположения сервиса со стендами DS.
                     </p>
@@ -75,7 +75,7 @@ function QuestionList() {
                         Мы предлагаем вам возможность заменить вышедшую из строя форсунку DS Евро 2 на новую
                         форсунку DS с таким же номером. При этом вы получите значительную скидку.
                     </p>
-                    <Link href="/news"><a className={styles.titleBuyers} style={{color: '#F46628'}}>Подробнее</a></Link>
+                    <Link href="/news"><a className={`${styles.titleBuyers} underlined_link`} style={{color: '#F46628'}}>Подробнее</a></Link>
                 </>
             }/>
         </>
@@ -92,7 +92,7 @@ function BuyersInfo() {
                     "Заказать курьерскую доставку либо экспресс-доставку, если необходимой детали нет в наличии в вашем городе ?",
                     "Узнать о партнерах DS, о дилерах и представителях DS?"
                 ]}/>
-                <p className={styles.titleBuyers}>Ответы на эти и другие вопросы Вы сможете получить, заполнив <Link href="#"><a>форму обратной связи</a></Link>, либо обратившись <Link href="#"><a>в службу клиентской поддержки</a></Link>.</p>
+                <p className={styles.titleBuyers}>Ответы на эти и другие вопросы Вы сможете получить, заполнив <Link href="#"><a className="underlined_link" style={{color: "#F46628"}}>форму обратной связи</a></Link>, либо обратившись <Link href="#"><a className="underlined_link" style={{color: "#F46628"}}>в службу клиентской поддержки</a></Link>.</p>
             </div>
             <QuestionList/>
         </div>

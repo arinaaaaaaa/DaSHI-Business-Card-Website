@@ -6,13 +6,15 @@ import styles from "../../styles/Guarantee.module.css";
 
 function Banner() {
     return (
-        <div className={styles.bannerSection}>
-            <div className={styles.guarantee}>
-                <p className={styles.title}>ГАРАНТИЯ НА<br/>ПРОДУКЦИЮ<span style={{color: '#F46628'}}> DS</span></p>
+        <>
+            <div className={styles.bannerSection}>
+                <div className={styles.guarantee}>
+                    <p className={styles.title}>ГАРАНТИЯ НА<br/>ПРОДУКЦИЮ<span style={{color: '#F46628'}}> DS</span></p>
+                    <div className={styles.subTitle}>ГАРАНТИЯ</div>
+                </div>
                 <img src="images/guarantee.png" alt="" />
             </div>
-            <div className={styles.subTitle}>ГАРАНТИЯ</div>
-        </div>
+        </>
     )
 }
 
@@ -51,7 +53,7 @@ function RuleItem(props) {
         <div className={styles.ruleItem}>
             <div className={styles.ruleSection}>
                 <p>{props.rule}</p>
-                {props.description != null ? <animated.img style={arrowRotate} src="icons/showAnswer.svg" alt="" onClick={() => startAnimation()}/> : null}
+                {props.description != null ? <animated.img className="pointerOnHover" style={arrowRotate} src="icons/showAnswer.svg" alt="" onClick={() => startAnimation()}/> : null}
             </div>
             {isOpen ?
                 <div className={styles.descriptionSection} style = {props.long == "yes" ? {marginTop: 10+"px"} : null} >
@@ -80,8 +82,8 @@ function Rules() {
                     <div className={styles.desc1}>
                         <ul className={styles.documentList}>
                             <li>акт рекламации по форме:
-                                <p>- <a href="#">акт рекламации для распылителей и управляющих клапанов</a>;</p>
-                                <p>- <a href="#">акт рекламации для инжекторов Common Rail и механических форсунок</a>;</p>
+                                <p>- <a className="underlined_link" href="#">акт рекламации для распылителей и управляющих клапанов</a>;</p>
+                                <p>- <a className="underlined_link" href="#">акт рекламации для инжекторов Common Rail и механических форсунок</a>;</p>
                             </li>
                             <li>накладную с указанием номера и даты составления, а также с подписью и печатью.</li>
                         </ul>
@@ -124,10 +126,10 @@ function Feedback() {
             <p>Отправить документы и уточнить дополнительную<br/>информацию можно следующим образом:</p>
             <div className={styles.feedbackList}>
                 <FeedbackItem icon="icons/note.svg" description ={
-                    <p>Заполнив <a href="#">форму обратной связи</a> с пометкой «гарантия»</p>
+                    <p>Заполнив <a href="#" className="underlined_link">форму обратной связи</a> с пометкой «гарантия»</p>
                 }/>
                 <FeedbackItem icon="icons/mail.svg" description ={
-                    <p>Отправив письмо на электронный ящик <a href="#">ds@ds.parts.com</a></p>
+                    <p>Отправив письмо на электронный ящик <a className="underlined_link" href="#">ds@ds.parts.com</a></p>
                 }/>
                 <FeedbackItem icon="icons/shoppingBag.svg" description ={
                     <p>Связавшись с представителем – партнером DS, у которого приобретался товар</p>

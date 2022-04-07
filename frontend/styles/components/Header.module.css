@@ -1,5 +1,7 @@
 .headerNavigation {
-    padding: 29px 114px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    width: 1210px;
     display: flex;
     justify-content: space-between;
 }

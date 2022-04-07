@@ -43,24 +43,24 @@ function DSService() {
       <div className={styles.buyersInfo}>
         <span className={styles.buyers}>
         <span  className="tooltip">
-          <span style={{display: "flex"}} className={styles.buyersTitle}>
+          <span style={{display: "flex"}} className={`${styles.buyersTitle} underlined_link`}>
             Сокращаем сроки 
             <img src="icons/time.svg" alt="" style={{marginLeft: 10+"px"}}/>
           </span>
           <span className="promt">
-            <p>В случае возникновения экстренной ситуации или детали необходимы срочно, вы можете обратиться для заказа экспресс-доставки. <Link href="http://localhost:3000/buyers"><a>Подробнее</a></Link></p>
+            <p>В случае возникновения экстренной ситуации или детали необходимы срочно, вы можете обратиться для заказа экспресс-доставки. <Link href="/buyers"><a className="underlined_link">Подробнее</a></Link></p>
           </span>
         </span>
           <p className={styles.buyersText}>Экспресс доставка форсунок DS<br/>и комплектующих</p>
         </span>
         <span className={styles.buyers}>
         <span  className="tooltip">
-          <span style={{display: "flex"}} className={styles.buyersTitle}>
-            Упрощаем работу 
+          <span style={{display: "flex"}} className={`${styles.buyersTitle} underlined_link`}>
+            Упрощаем работу
             <img src="icons/check.svg" alt="" style={{marginLeft: 10+"px"}}/>
           </span>
           <span className="promt">
-            <p>В случае возникновения неисправности форсунки бренда DS, завод предлагает возможность провести экспресс-диагностику детали на оборудовании DS со скидкой до 50%. <Link href="http://localhost:3000/buyers"><a>Подробнее</a></Link></p>
+            <p>В случае возникновения неисправности форсунки бренда DS, завод предлагает возможность провести экспресс-диагностику детали на оборудовании DS со скидкой до 50%. <Link href="/buyers"><a className="underlined_link">Подробнее</a></Link></p>
           </span>
         </span>
           <p className={styles.buyersText}>Экспресс диагностика<br/>форсунок</p>
@@ -77,7 +77,7 @@ function SmallNews(props) {
           <span className={`${props.color} ${"tooltipIcon"}`}>?</span>
           <span className="promt">
             {props.promt}
-            {props.link != null ? <Link href={props.link}><a>Подробнее</a></Link> : null}
+            {props.link != null ? <Link href={props.link}><a className="underlined_link">Подробнее</a></Link> : null}
           </span>
         </span>
       </span>
@@ -100,14 +100,14 @@ function MainPage() {
                 title="ЗАМЕНА ВЫШЕДШИХ ИЗ СТРОЯ ФОРСУНОК DS - E2 - "
                 special="ВЫГОДА ДО 30%"
                 promt="Мы предлагаем возможность заменить вышедшую из строя форсунку DS Евро 2, на новую со значительной скидкой. "
-                link = {`${process.env.api_hostname}/news`}
+                link = "/news"
                 color = "dark"
               />
               <SmallNews
                 title="КОНТРОЛЬ КАЧЕСТВА "
                 special="ПРОДУКЦИИ DS"
                 promt = "Проверить подлинность продукции DS вы можете на сайте официальных представителей в разделе «Проверка подлинности DS / Контроль качества DS». "
-                link={`${process.env.api_hostname}/buyers#quelityControl`}
+                link="/buyers#quelityControl"
                 color = "light"
               />
             </div>

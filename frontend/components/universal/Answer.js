@@ -67,8 +67,18 @@ function Answer(props) {
     return (
         <div className={styles.answer} style = {isOpen ? {border: 0 + "px"} : null}>
             <div className={styles.questionSection} style = {props.long == "yes" ? {boxSizing: 'border-box', paddingTop: 10+"px"} : null}>
-                {props.question}
-                <animated.img style={arrowRotate} src="icons/showAnswer.svg" alt="" onClick={() => startAnimation()}/>
+                <div
+                    style={{
+                        display: "flex",
+                        alignItems: "center"
+                    }}
+                >
+                    <img 
+                        src="/icons/listPoint.svg"
+                        style={{marginLeft: "0", marginRight: "14px"}}
+                    />{props.question}
+                    </div>
+                <animated.img style={arrowRotate} className="pointerOnHover" src="icons/showAnswer.svg" alt="" onClick={() => startAnimation()}/>
             </div>
             {isOpen ?
                 <div className={styles.answerSection} style = {props.long == "yes" ? {marginTop: 10+"px"} : null} >

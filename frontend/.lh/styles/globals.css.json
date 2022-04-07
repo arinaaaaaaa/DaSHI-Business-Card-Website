@@ -1,0 +1,50 @@
+{
+    "sourceFile": "styles/globals.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1649091917170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1649274389463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,5 +139,14 @@\n     visibility: visible;\n     transition: 0s .2s;\n }\n .tooltip:focus { outline: none; }\n-.tooltipIcon:hover { color: #F46628;}\n\\ No newline at end of file\n+.tooltipIcon:hover { color: #F46628;}\n+\n+\n+.underlined_link {\n+\n+}\n+\n+.underlined_link:hover {\n+    text-decoration: underline;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1649357775036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -143,10 +143,14 @@\n .tooltipIcon:hover { color: #F46628;}\n \n \n .underlined_link {\n-\n+    text-decoration: none;\n }\n \n .underlined_link:hover {\n     text-decoration: underline;\n+}\n+\n+.pointerOnHover: :hover {\n+    cursor: pointer;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1649357781154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -150,7 +150,7 @@\n .underlined_link:hover {\n     text-decoration: underline;\n }\n \n-.pointerOnHover: :hover {\n+.pointerOnHover:hover {\n     cursor: pointer;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1649358122108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -152,5 +152,9 @@\n }\n \n .pointerOnHover:hover {\n     cursor: pointer;\n+}\n+\n+.opacity_link {\n+    background: #FFFFFFB2;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1649358137567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,8 +153,4 @@\n \n .pointerOnHover:hover {\n     cursor: pointer;\n }\n-\n-.opacity_link {\n-    background: #FFFFFFB2;\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1649362564106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,4 +153,9 @@\n \n .pointerOnHover:hover {\n     cursor: pointer;\n }\n+#__next {\n+    display: flex;\n+    flex-direction: column;\n+    align-items: center;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1649363216449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -157,5 +157,9 @@\n #__next {\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n+}\n+\n+.blueContainerOnHover:hover {\n+    background-color: #3E2B68;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1649363431741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,6 +160,10 @@\n     align-items: center;\n }\n \n .blueContainerOnHover:hover {\n-    background-color: #3E2B68;\n+    background-color:#3E2B68;\n+}\n+\n+.orangeContainerOnHover:hover {\n+    background-color: #E16129;\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1649091917170,
+            "name": "Commit-0",
+            "content": "@font-face {\n    font-family: 'foundry-bold';\n    src: url('/fonts/Foundry Monoline/FoundryMonolineOT3-Bold.otf');\n}\n@font-face {\n    font-family: 'foundry-boldita';\n    src: url('/fonts/Foundry Monoline/FoundryMonolineOT3-BoldIta.otf');\n}\n@font-face {\n    font-family: 'foundry-regular';\n    src: url('/fonts/Foundry Monoline/FoundryMonolineOT3-Regular.otf');\n}\n@font-face {\n    font-family: 'foundry-regita';\n    src: url('/fonts/Foundry Monoline/FoundryMonolineOT3-RegIta.otf');\n}\n@font-face {\n    font-family: 'foundry-medium';\n    src: url('/fonts/Foundry Monoline/FoundryMonolineOT3-Medium.otf');\n}\n@font-face {\n    font-family: 'foundry-exboldita';\n    src: url('/fonts/Foundry Monoline/FoundryMonolineOT3-ExBdIta.otf');\n}\n@font-face {\n    font-family: 'gilroy';\n    src: url('/fonts/Gilroy/Gilroy-Medium.ttf');\n}\n@font-face {\n    font-family: 'gilroy-light';\n    src: url('/fonts/Gilroy/Gilroy-Light.ttf');\n}\n@font-face {\n    font-family: 'gilroy-regular';\n    src: url('/fonts/Gilroy/Gilroy-Regular.ttf');\n}\n@font-face {\n    font-family: 'gilroy-bold';\n    src: url('/fonts/Gilroy/Gilroy-Bold.ttf');\n}\n@font-face {\n    font-family: 'gilroy-semibold';\n    src: url('/fonts/Gilroy/Gilroy-SemiBold.ttf');\n}\n* {\n    margin: 0;\n    padding: 0;\n}\nhtml { background-color:#F6F6F6; }\n.contentSection {\n    margin-top: 70px;\n    display: flex;\n    justify-content: center;\n    margin-bottom: 100px;\n}\n.content {\n    display: flex;\n    justify-content: space-between;\n    width: 1210px;\n}\n.answerTitle {\n    font-family: 'gilroy';\n    font-size: 15px;\n    line-height: 22.5px;\n    margin-bottom: 27px;\n    font-weight: 600;\n    color: #2B1A51;\n}\n.answerList { \n    list-style: none;\n    display: flex;\n    flex-direction: column;\n    list-style-image: url('../public/icons/listMarker.svg');\n}\n.answerList li span {\n    display: flex;\n    align-items: center;\n}\n/*Всплывающие подсказки*/\n.tooltip {\n    margin: 0;\n    display: flex;\n    position: relative;\n    cursor: pointer;\n    align-items: center;\n}\n.tooltipIcon {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    text-align: center;\n    height: 24px;\n    width: 24px;\n    border-radius: 45px;\n    font-family: 'gilroy';\n    font-size: 14px;\n    color: #9f9f9f;\n}\n.tooltipIcon.dark { background-color: #ddd; }\n.tooltipIcon.light { background-color: #fff; }\n.promt {\n    position: absolute;\n    z-index: 1;\n    top: 120%;\n    left: -20em;\n    right: -20em;\n    width: -moz-max-content;\n    width: -webkit-max-content;\n    width: max-content;\n    max-width: 25em; \n    max-height: 80vh;\n    overflow: auto;\n    visibility: hidden;\n    margin: 0 auto .4em;\n    padding: 36px;\n    background: #fff;\n    box-shadow: 8px 8px 44px 0px #00000014;\n}\n.promt, .promtText {\n    font-family: 'gilroy-light';\n    color: #757575;\n    font-size: 90%;\n    line-height: 140%;\n}\n.tooltip:before {\n    content: \"\";\n    position: absolute;\n    top: 1.3em;\n    left: 0;\n    right: 0;\n    height: 2em;\n    visibility: hidden;\n  }\n.tooltip > .promt a {\n    font-family: 'gilroy';\n    color: #2B1A51;\n}\n.tooltip:hover > .promt, .tooltip:hover:before, .tooltip:hover:after, .tooltip:focus > .promt, .tooltip:focus:before, .tooltip:focus:after {\n    visibility: visible;\n    transition: 0s .2s;\n}\n.tooltip:focus { outline: none; }\n.tooltipIcon:hover { color: #F46628;}"
+        }
+    ]
+}

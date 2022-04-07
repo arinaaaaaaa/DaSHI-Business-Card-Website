@@ -1,0 +1,22 @@
+{
+    "sourceFile": "styles/Buyers.module.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1649365282450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1649365290660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n .answerTopic {\n     font-family: 'gilroy-regular';\n     font-size: 15px;\n     line-height: 22.5px;\n+    font-weight: 400;\n     color: #2B1A51;\n }\n .answerTopic a { color: #2B1A51; }\n .iconsSection {\n"
+                }
+            ],
+            "date": 1649365282450,
+            "name": "Commit-0",
+            "content": ".buyersInfo {\n    width: 798px;\n    box-sizing: border-box;\n    padding: 70px 63px;\n    background-color: #fff;\n}\n.mainInfo {\n    background-color: #F6F6F6;\n    box-sizing: border-box;\n    padding: 39px 42px;\n    margin-bottom: 25px;\n}\n.titleBuyers {\n    margin-top: 25px;\n    font-family: 'gilroy';\n    font-size: 15px;\n    line-height: 22.5px;\n    color: #2B1A51;\n}\n.titleBuyers a { color: #2B1A51; }\n.answerTopic {\n    font-family: 'gilroy-regular';\n    font-size: 15px;\n    line-height: 22.5px;\n    color: #2B1A51;\n}\n.answerTopic a { color: #2B1A51; }\n.iconsSection {\n    display: flex;\n    align-items: center;\n    margin-top: 27px;\n}\n.iconsSection img { margin-right: 40px; }\n.iconsSection img:last-child { margin-right: 0; }"
+        }
+    ]
+}

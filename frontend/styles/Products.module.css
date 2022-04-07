@@ -1,4 +1,4 @@
-.productsSection {
+    .productsSection {
     width: 798px;
     background-color: #fff;
     box-sizing: border-box;
@@ -7,8 +7,8 @@
 }
 .linksSection a {
     font-family: 'foundry-boldita';
+    font-weight: 800;
     color: #2B1A51;
-    text-decoration: underline;
 }
 .linksSection, .linkSection{ display: flex; }
 .linkSection.tooltip { margin: 0; }
@@ -34,6 +34,6 @@
     font-size: 17px;
     line-height: 23.8px;
     color: #2B1A51;
-    margin-bottom: 19px;
+    font-weight: 600;
 }
 .productImg { height: 65px; }

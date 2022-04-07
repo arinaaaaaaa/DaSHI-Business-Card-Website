@@ -77,6 +77,7 @@
 .smallNews:last-child { background-color: #ECEBEE; }
 .newsTitle {
     font-family: 'foundry-boldita';
+    font-weight: 800;
     font-size: 17px;
     line-height: 22.95px;
     color: #2B1A51;
