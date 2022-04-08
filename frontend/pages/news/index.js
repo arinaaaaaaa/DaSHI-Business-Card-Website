@@ -123,7 +123,7 @@ function NewsList() {
                     <div className={styles.newsList}>
                         {newsArray.map((item, index) =>
                             <NewsItem
-                                icon={`${process.env.api_hostname}/${item.background}`}
+                                icon={`${item.background}`}
                                 key={index}
                                 title={item.title}
                                 newsTopic={item.content}

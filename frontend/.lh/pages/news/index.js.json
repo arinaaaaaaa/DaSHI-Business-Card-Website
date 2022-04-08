@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1649275797574,
@@ -12,6 +12,10 @@
                 {
                     "date": 1649275803931,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,9 +113,9 @@\n                 <div className={styles.searchSection}>\n                     <Dropdown topic = {topic} setTopic = {setTopic}/>\n                     {topic != \"\" ?\n                         <button className={styles.clear} onClick={() => setTopic(\"\")}>\n-                            <img src=\"icons/check.svg\" alt=\"\" />\n+                            <img src=\"/icons/check.svg\" alt=\"\" />\n                             СБРОСИТЬ\n                         </button>\n                     : null }\n                 </div>\n"
+                },
+                {
+                    "date": 1649392526729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,9 @@\n                 {newsArray.length != 0 ?\n                     <div className={styles.newsList}>\n                         {newsArray.map((item, index) =>\n                             <NewsItem\n-                                icon={`${process.env.api_hostname}/${item.background}`}\n+                                icon={`${item.background}`}\n                                 key={index}\n                                 title={item.title}\n                                 newsTopic={item.content}\n                                 shortPart={(item.content).length > 268 ? shortPart(item.content) : null}\n"
                 }
             ],
             "date": 1649275797574,

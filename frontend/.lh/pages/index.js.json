@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 11,
+            "activePatchIndex": 12,
             "patches": [
                 {
                     "date": 1649275768768,
@@ -52,6 +52,10 @@
                 {
                     "date": 1649368312686,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,9 +99,9 @@\n               <SmallNews\n                 title=\"ЗАМЕНА ВЫШЕДШИХ ИЗ СТРОЯ ФОРСУНОК DS - E2 - \"\n                 special=\"ВЫГОДА ДО 30%\"\n                 promt=\"Мы предлагаем возможность заменить вышедшую из строя форсунку DS Евро 2, на новую со значительной скидкой. \"\n-                link = {`/news`}\n+                link = \"/news\"\n                 color = \"dark\"\n               />\n               <SmallNews\n                 title=\"КОНТРОЛЬ КАЧЕСТВА \"\n"
+                },
+                {
+                    "date": 1649393487937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     return (\n         <div className={styles.bannerSection}>\n           <div className={styles.bigNewsSection}>\n             <span className={styles.titleSection}>\n-              <img src={`${process.env.api_hostname}/${bannerInfo.titleIcon}`} alt=\"\" style={{width: 34 +\"px\", height: 44 +\"px\"}}/>\n+              <img src={`${bannerInfo.titleIcon}`} alt=\"\" style={{width: 34 +\"px\", height: 44 +\"px\"}}/>\n               <Link href={`${process.env.api_hostname}/news`}><a className={styles.newsTitleBanner}>{bannerInfo.title}<br/><span style={{color: '#F46628'}}>{bannerInfo.special}</span></a></Link>\n             </span>\n             <span className={styles.top}>\n               <img src={`${process.env.api_hostname}/${bannerInfo.subtitleIcon}`} alt=\"\" style={{width: 25 +\"px\", height: 25 +\"px\"}}/>\n"
                 }
             ],
             "date": 1649275768768,
