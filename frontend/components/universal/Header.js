@@ -10,6 +10,7 @@ function HeaderLinks() {
             <Link href="/buyers"><a className = {`${styles.linkItem} underlined_link`}>ПОКУПАТЕЛЯМ</a></Link>
             <Link href="/partners"><a className = {`${styles.linkItem} underlined_link`}>ПАРТНЕРАМ</a></Link>
             <Link href="/about"><a className = {`${styles.linkItem} underlined_link`}>О DaSHI</a></Link>
+            <Link href="/news"><a className = {`${styles.linkItem} underlined_link`}>НОВОСТИ</a></Link>
         </div>
     )
 }
