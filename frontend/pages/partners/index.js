@@ -21,7 +21,7 @@ function PartnersInfo() {
             </div>
             <p className={styles.title}>Приглашаем Вас в нашу <span style={{color: '#F46628'}}>команду DS</span>!</p>
             <div className="questionList">
-                <Answer question="К чему приведет наща совместная работа?" answer = {
+                <Answer question="К чему приведет наша совместная работа?" answer = {
                     <>
                         <p className="answerTitle">Появится новая точка продаж DS в Вашем городе, населенном пункте. В результате:</p>
                         <div className="list">

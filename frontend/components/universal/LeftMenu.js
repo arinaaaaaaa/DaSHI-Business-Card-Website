@@ -25,7 +25,7 @@ function Menu(props) {
                         </a>
                     </>
                 : menuType == 1 ?
-                    <Link href="/buyers"><a className="underlined_link">Склады DS в России и других странах</a></Link>
+                    <Link href="/buyers#ds-stocks"><a className="underlined_link">Склады DS в России и других странах</a></Link>
                 : menuType == 2 ?
                     <>
                         <Link href="/partners"><a className="underlined_link">Стать партнером DS</a></Link>

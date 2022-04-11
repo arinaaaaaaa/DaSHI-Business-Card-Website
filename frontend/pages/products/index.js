@@ -49,7 +49,7 @@ function ProductsSection() {
                         <span className="tooltipIcon dark" style={{marginLeft: 12 + "px", textDecoration: "none"}}>?</span>
                     <span className="promt">
                         Вся продукция DaSHI сертифицирована в России. Каждая партия проходит полную процедуру
-                        таможенного оформления и очистки на территории РФ. <Link href="/buyers"><a>Подробнее</a></Link>
+                        таможенного оформления и очистки на территории РФ. <Link href="/buyers#quality-control"><a className="underlined_link">Подробнее</a></Link>
                     </span>
                 </span>
             </div>

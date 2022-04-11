@@ -23,11 +23,11 @@ function BigNews() {
         <div className={styles.bannerSection}>
           <div className={styles.bigNewsSection}>
             <span className={styles.titleSection}>
-              <img src={`${bannerInfo.titleIcon}`} alt="" style={{width: 34 +"px", height: 44 +"px"}}/>
+              <img src={bannerInfo.titleIcon} alt="" style={{width: 34 +"px", height: 44 +"px"}}/>
               <Link href={`${process.env.api_hostname}/news`}><a className={styles.newsTitleBanner}>{bannerInfo.title}<br/><span style={{color: '#F46628'}}>{bannerInfo.special}</span></a></Link>
             </span>
             <span className={styles.top}>
-              <img src={`${bannerInfo.subtitleIcon}`} alt="" style={{width: 25 +"px", height: 25 +"px"}}/>
+              <img src={bannerInfo.subtitleIcon} alt="" style={{width: 25 +"px", height: 25 +"px"}}/>
               <p>{bannerInfo.subtitle}</p>
             </span>
           </div>
@@ -48,7 +48,7 @@ function DSService() {
             <img src="icons/time.svg" alt="" style={{marginLeft: 10+"px"}}/>
           </span>
           <span className="promt">
-            <p>В случае возникновения экстренной ситуации или детали необходимы срочно, вы можете обратиться для заказа экспресс-доставки. <Link href="/buyers"><a className="underlined_link">Подробнее</a></Link></p>
+            <p>В случае возникновения экстренной ситуации или детали необходимы срочно, вы можете обратиться для заказа экспресс-доставки. <Link href="/buyers#express-delivery"><a className="underlined_link">Подробнее</a></Link></p>
           </span>
         </span>
           <p className={styles.buyersText}>Экспресс доставка форсунок DS<br/>и комплектующих</p>
@@ -60,7 +60,7 @@ function DSService() {
             <img src="icons/check.svg" alt="" style={{marginLeft: 10+"px"}}/>
           </span>
           <span className="promt">
-            <p>В случае возникновения неисправности форсунки бренда DS, завод предлагает возможность провести экспресс-диагностику детали на оборудовании DS со скидкой до 50%. <Link href="/buyers"><a className="underlined_link">Подробнее</a></Link></p>
+            <p>В случае возникновения неисправности форсунки бренда DS, завод предлагает возможность провести экспресс-диагностику детали на оборудовании DS со скидкой до 50%. <Link href="/buyers#express-diagnostic"><a className="underlined_link">Подробнее</a></Link></p>
           </span>
         </span>
           <p className={styles.buyersText}>Экспресс диагностика<br/>форсунок</p>
@@ -107,7 +107,7 @@ function MainPage() {
                 title="КОНТРОЛЬ КАЧЕСТВА "
                 special="ПРОДУКЦИИ DS"
                 promt = "Проверить подлинность продукции DS вы можете на сайте официальных представителей в разделе «Проверка подлинности DS / Контроль качества DS». "
-                link="/buyers#quelityControl"
+                link="/buyers#quality-control"
                 color = "light"
               />
             </div>

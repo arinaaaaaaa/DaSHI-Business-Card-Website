@@ -10,7 +10,7 @@ import { AnswerList } from "../../components/universal/Answer.js";
 function QuestionList() {
     return (
         <>
-            <Answer question = "DaSHI. Склады, точки продаж DS в России и других странах" answer = {
+            <Answer question_id="ds-stocks" question="DaSHI. Склады, точки продаж DS в России и других странах" answer = {
                 <>
                     <p className={styles.answerTopic}>На сайтах наших партнеров и представителей DS в разделе «Продукция DaSHI» вы сможете проследить путь каждой детали – запуск в производство («На заводе»), срок поставки и местонахождение («В пути»), размещение на складе в России («В наличии»).</p>
                     <span className={styles.iconsSection}>
@@ -21,7 +21,7 @@ function QuestionList() {
                     <p className={styles.titleBuyers}>Предлагаем познакомиться с нашим партнером в России - <Link href="http://dsparts-dv.com"><a style={{color: '#F46628'}} className="underlined_link">www.dsparts-dv.com</a></Link></p>
                 </>
             }/>
-            <Answer id="quelityControl" question="Контроль качества DS" answer = {
+            <Answer question_id="quality-control" question="Контроль качества DS" answer = {
                 <p className={styles.answerTopic}>
                     Вся продукция DaSHI сертифицирована в России. Каждая партия проходит полную процедуру
                     таможенного оформления и очистки на территории РФ.
@@ -41,7 +41,7 @@ function QuestionList() {
                     <Link href="/guarantee"><a className={`${styles.titleBuyers} underlined_link`} style={{color: '#F46628'}}>Подробнее</a></Link>
                 </>
             }/>
-            <Answer question="Сервис DS. Экспресс-доставка" answer = {
+            <Answer question_id="express-delivery" question="Сервис DS. Экспресс-доставка" answer = {
                 <>
                     <p className={styles.answerTopic}>
                         В случае возникновения экстренной ситуации или детали необходимы срочно, вы можете
@@ -51,7 +51,7 @@ function QuestionList() {
                     </p>
                 </>
             }/>
-            <Answer question="Сервис DS. Экспресс-диагностика" answer = {
+            <Answer question_id="express-diagnostic" question="Сервис DS. Экспресс-диагностика" answer = {
                 <>
                     <p className={styles.answerTopic}>
                         В случае возникновения неисправности форсунки бренда DS, завод предлагает возможность

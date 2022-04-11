@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
+import {useRouter} from "next/router";
 import styles from "../../styles/components/Answer.module.css";
 
 function AnswerList(props) {
@@ -35,9 +36,12 @@ function FileList(props) {
 
 function Answer(props) {
 
-    const [isOpen, setOpen] = useState(false);
+    const router = useRouter();
+
+    const [isOpen, setOpen] = useState(router.asPath.includes(`#${props.question_id}`));
     const [doContinue, setDoContinue] = useState(false);
-    const [doReverse, setDoReverse] = useState(false);
+    const [doReverse, setDoReverse] = useState(router.asPath.includes(`#${props.question_id}`));
+
 
     const arrowRotate = useSpring({
         cancel: !doContinue,
@@ -65,7 +69,7 @@ function Answer(props) {
     }
 
     return (
-        <div className={styles.answer} style = {isOpen ? {border: 0 + "px"} : null}>
+        <div id={props.question_id} className={styles.answer} style = {isOpen ? {border: 0 + "px"} : null}>
             <div className={styles.questionSection} style = {props.long == "yes" ? {boxSizing: 'border-box', paddingTop: 10+"px"} : null}>
                 <div
                     style={{
