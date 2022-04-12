@@ -27,7 +27,7 @@ function FileList(props) {
                     key={index}
                 >
                     <img src="icons/fileMarker.svg" alt="" />
-                    <a href={item[0]}>{item[1]}</a>
+                    <a className="underlined_link" href={item[0]}>{item[1]}</a>
                 </div>
             ))}
         </>

@@ -44,7 +44,7 @@ function PartnersInfo() {
                             ["#", "Бланк «О продукции»"],
                             ["#", "Анкета партнера с указанием желаемой формы сотрудничества*"]
                         ]}/>
-                        <p className="answerTitle" style={{marginBottom: 0, marginTop: 29 + "px"}}>Заполненные документы можно отправить через <a href="#" style={{color: '#F46628'}}>форму обратной связи</a> либо на <a href="#" style={{color: '#F46628'}}>e-mail</a>.</p>
+                        <p className="answerTitle" style={{marginBottom: 0, marginTop: 29 + "px"}}>Заполненные документы можно отправить через <a href="#" className="underlined_link" style={{color: '#F46628'}}>форму обратной связи</a> либо на <a href="#" className="underlined_link" style={{color: '#F46628'}}>e-mail</a>.</p>
                     </>
                 }/>
                 <Answer question="Формы сотрудничества" answer = {
