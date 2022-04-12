@@ -24,7 +24,16 @@ function BigNews() {
           <div className={styles.bigNewsSection}>
             <span className={styles.titleSection}>
               <img src={bannerInfo.titleIcon} alt="" style={{width: 34 +"px", height: 44 +"px"}}/>
-              <Link href={`${process.env.api_hostname}/news`}><a className={styles.newsTitleBanner}>{bannerInfo.title}<br/><span style={{color: '#F46628'}}>{bannerInfo.special}</span></a></Link>
+              <Link href={`${process.env.api_hostname}/news`}>
+                <a className={styles.newsTitleBanner}>
+                  <span className={styles.bannerInfoTitle}> {bannerInfo.title}</span><br/>
+                  <span 
+                    style={{
+                      color: '#F46628',
+                    }}
+                    className={styles.bannerInfoSpecial}
+                >{bannerInfo.special}</span></a>
+              </Link>
             </span>
             <span className={styles.top}>
               <img src={bannerInfo.subtitleIcon} alt="" style={{width: 25 +"px", height: 25 +"px"}}/>

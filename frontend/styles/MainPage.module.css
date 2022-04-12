@@ -83,3 +83,20 @@
     color: #2B1A51;
     margin-bottom: 22px;
 }
+
+.titleSection:hover .bannerInfoTitle {
+    text-decoration: underline !important;
+}
+
+.titleSection:hover .bannerInfoSpecial {
+    text-decoration: underline !important;
+}
+
+
+.bannerInfoTitle {
+    text-decoration-color: #2B1A51 !important;
+}
+
+.bannerInfoSpecial {
+    text-decoration-color: #F46628 !important;
+}
