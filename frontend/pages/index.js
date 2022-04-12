@@ -52,7 +52,7 @@ function DSService() {
       <div className={styles.buyersInfo}>
         <span className={styles.buyers}>
         <span  className="tooltip">
-          <span style={{display: "flex"}} className={`${styles.buyersTitle} underlined_link`}>
+          <span style={{display: "flex"}} className={`${styles.buyersTitle} switch_color_to_orange`}>
             Сокращаем сроки 
             <img src="icons/time.svg" alt="" style={{marginLeft: 10+"px"}}/>
           </span>
@@ -64,7 +64,7 @@ function DSService() {
         </span>
         <span className={styles.buyers}>
         <span  className="tooltip">
-          <span style={{display: "flex"}} className={`${styles.buyersTitle} underlined_link`}>
+          <span style={{display: "flex"}} className={`${styles.buyersTitle} switch_color_to_orange`}>
             Упрощаем работу
             <img src="icons/check.svg" alt="" style={{marginLeft: 10+"px"}}/>
           </span>

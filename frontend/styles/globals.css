@@ -167,3 +167,7 @@ html { background-color:#F6F6F6; }
 .orangeContainerOnHover:hover {
     background-color: #E16129;
 }
+
+.switch_color_to_orange:hover {
+    color: #F46628;
+}
