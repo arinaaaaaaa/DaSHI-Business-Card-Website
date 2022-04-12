@@ -24,7 +24,7 @@ function BigNews() {
           <div className={styles.bigNewsSection}>
             <span className={styles.titleSection}>
               <img src={bannerInfo.titleIcon} alt="" style={{width: 34 +"px", height: 44 +"px"}}/>
-              <Link href={`${process.env.api_hostname}/news`}>
+              <Link href={bannerInfo.newsLink}>
                 <a className={styles.newsTitleBanner}>
                   <span className={styles.bannerInfoTitle}> {bannerInfo.title}</span><br/>
                   <span 
