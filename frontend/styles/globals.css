@@ -81,7 +81,6 @@ html { background-color:#F6F6F6; }
     margin: 0;
     display: flex;
     position: relative;
-    cursor: pointer;
     align-items: center;
 }
 .tooltipIcon {
@@ -95,6 +94,7 @@ html { background-color:#F6F6F6; }
     font-family: 'gilroy';
     font-size: 14px;
     color: #9f9f9f;
+    cursor: pointer;
 }
 .tooltipIcon.dark { background-color: #ddd; }
 .tooltipIcon.light { background-color: #fff; }
