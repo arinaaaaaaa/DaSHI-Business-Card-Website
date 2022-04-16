@@ -42,7 +42,7 @@ function Answer(props) {
     const [doContinue, setDoContinue] = useState(false);
     const [doReverse, setDoReverse] = useState(router.asPath.includes(`#${props.question_id}`));
 
-
+    
     const arrowRotate = useSpring({
         cancel: !doContinue,
         from: {

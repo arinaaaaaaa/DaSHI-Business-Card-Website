@@ -160,6 +160,7 @@ html { background-color:#F6F6F6; }
     align-items: center;
 }
 
+/* UI-KIT */
 .blueContainerOnHover:hover {
     background-color:#3E2B68;
 }

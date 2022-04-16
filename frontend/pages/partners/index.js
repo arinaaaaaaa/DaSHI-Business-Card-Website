@@ -5,14 +5,18 @@ import Menu from "../../components/universal/LeftMenu.js";
 import Answer from "../../components/universal/Answer.js";
 import styles from "../../styles/Partners.module.css";
 import { AnswerList, FileList } from "../../components/universal/Answer.js";
+import { useEffect, useRef, useState } from "react";
 
 function PartnersInfo() {
+
     return (
         <div className={styles.partnersSection}>
             <div className={styles.partnersHeader}>
                 <p className={styles.sectionTitle}>СТАТЬ ПАРТНЕРОМ <span style={{color: '#F46628'}}>DS</span></p>
                 <span className={styles.partnerTypes}>
-                    <button className="blueContainerOnHover">DS +</button>
+                    <button 
+                        className="blueContainerOnHover"
+                    >DS +</button>
                     <span className="tooltip">
                         <button className="blueContainerOnHover" style={{margin: 0}} disabled>DS Ultra</button>
                         <span className="promt">Раздел находится в разработке</span>
