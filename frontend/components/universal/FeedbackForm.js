@@ -1,13 +1,17 @@
 import styles from '../../styles/components/FeedBackForm.module.css';
 import useOnClickOutside from 'use-onclickoutside';
 import { useEffect, useRef, useState } from 'react';
-import { update } from 'react-spring';
 
 function UserInfo(props) {
+
+    function updateInner(event) {
+        props.updater(event.target.value);
+    }
+
     return (
         <>
             <p className={styles.userData}>{props.criteria}</p>
-            <input type="text" placeholder={props.placeholder} className={styles.userDataInput}/>
+            <input onInput={updateInner} type="text" placeholder={props.placeholder} className={styles.userDataInput}/>
         </>
     )
 }
@@ -17,6 +21,11 @@ export default function FeedbackForm(props) {
 
     const formRef = useRef(null);
     const [content, setContent] = useState('');
+    const [fio, setFio] = useState('');
+    const [organization, setOrganization] = useState('');
+    const [email, setEmail] = useState('');
+    const [city, setCity] = useState('');
+    const [forPartnership, setForPartnership] = useState('');
     const contentRef = useRef(null);
 
     useOnClickOutside(formRef, () => {
@@ -26,7 +35,6 @@ export default function FeedbackForm(props) {
     function updateQuestion(event) {
         setContent(event.target.value);
         if (props.updater) {
-            console.log('ENTERED');
             props.updater(event);
         }
     }
@@ -49,17 +57,17 @@ export default function FeedbackForm(props) {
                 </div>
                 <div className={styles.messageForms}>
                     <span className={styles.userInfoForm}>
-                        <UserInfo criteria="ФИО*" placeholder="Иванов Иван Иванович"/>
-                        <UserInfo criteria="Наименование организации*" placeholder="ООО «ДиЭс-Трейд»"/>
-                        <UserInfo criteria="E-mail*" placeholder="sale@ds.parts.com"/>
-                        <UserInfo criteria="Город/населенный пункт" placeholder="г. Благовещенск"/>
+                        <UserInfo updater={setFio} value={fio} criteria="ФИО*" placeholder="Иванов Иван Иванович"/>
+                        <UserInfo updater={setOrganization} value={organization} criteria="Наименование организации*" placeholder="ООО «ДиЭс-Трейд»"/>
+                        <UserInfo updater={setEmail} value={email} criteria="E-mail*" placeholder="sale@ds.parts.com"/>
+                        <UserInfo updater={setCity} value={city} criteria="Город/населенный пункт" placeholder="г. Благовещенск"/>
                     </span>
                     <span style={{width: 591 + "px"}}>
                         <span className={styles.messageForm}>
                             <p className={styles.userData}>Введите сообщение*</p>
                             <textarea onInput={updateQuestion} ref={contentRef} value={content} placeholder="Введите интересующий вопрос..."/>
                         </span>
-                        <UserInfo criteria="***Для сотрудничества" placeholder="Стать партнером"/>
+                        <UserInfo updater={setForPartnership} value={forPartnership} criteria="***Для сотрудничества" placeholder="Стать партнером"/>
                     </span>
                 </div>
                 <div className={styles.toSend} id="feedback">
