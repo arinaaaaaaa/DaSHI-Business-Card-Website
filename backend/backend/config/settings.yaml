@@ -9,7 +9,7 @@ default:
     static_root: null
     static_url: null
     media_root: '/home/anmark/projects/DaSHI-Business-Card-Website/backend/media'
-    media_url: 'http://localhost:8000/media/'
+    media_url: '/media/'
     debug: true
 
 production:
@@ -21,7 +21,7 @@ production:
     db_password: "dashi_admin_password_(S`NW$p9FE5#G$Bd"
     db_dbname: "ds_business"
     debug: false
-    media_url: 'www.dashiparts.com/media/'
+    media_url: '/media/'
     media_root: 'www-data/media/'
     static_root: '/www-data/'
     static_url: 'http://www.dsparts-dv.com:80/static/'
