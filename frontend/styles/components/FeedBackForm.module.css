@@ -4,9 +4,9 @@
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
+    margin-top: 100px;
 }
 .feedback {
-    margin-top: 100px;
     width: 1210px;
     background-color: #ECEBEE;
     box-sizing: border-box;

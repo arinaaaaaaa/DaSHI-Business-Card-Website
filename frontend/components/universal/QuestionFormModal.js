@@ -1,6 +1,5 @@
 import FeedbackForm from "./FeedbackForm";
 import styles from '../../styles/components/QuestionFormModal.module.css';
-import { useState } from "react";
 
 export default function QuestionFormModal(props) {
 

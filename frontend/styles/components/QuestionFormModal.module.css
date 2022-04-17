@@ -1,18 +1,15 @@
 .feedbackformwrapper {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.5);
     position: fixed;
     transition: 0.3s;
     z-index: 100;
     top:0;
+    display: flex;
+    align-items: center;
 }
-/* .modalContent {
-    padding: 30px;
-    border-radius: 5px;
-    background-color: #fff;
-    width: 40vw;
-    transform: scale(0.5);
-    transition: 0.2s all;
+
+.feedbackformwrapper div div {
+    border-radius: 10px;
 }
-.modalContent.active { transform: scale(1); } */
