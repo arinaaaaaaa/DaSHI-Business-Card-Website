@@ -149,6 +149,7 @@ html { background-color:#F6F6F6; }
 
 .underlined_link:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .pointerOnHover:hover {
