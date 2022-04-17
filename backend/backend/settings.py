@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from os import path
 from pathlib import Path
+from .config import settings as dynaconf_settings
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -74,21 +76,24 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'backend.wsgi.application'
+
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'pw',
-        'HOST': 'localhost',
-        'PORT': '5433',
+        'NAME': dynaconf_settings.DB_DBNAME,
+        'USER': dynaconf_settings.DB_USERNAME,
+        'PASSWORD': dynaconf_settings.DB_PASSWORD,
+        'HOST': dynaconf_settings.DB_HOSTNAME,
+        'PORT': dynaconf_settings.DB_PORT,
     }
 }
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = path.join(BASE_DIR, 'media')
+
+MEDIA_URL = dynaconf_settings.MEDIA_URL
+MEDIA_ROOT = dynaconf_settings.MEDIA_ROOT
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

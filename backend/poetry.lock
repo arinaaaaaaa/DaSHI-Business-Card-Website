@@ -81,6 +81,24 @@ django = ">=2.2"
 pytz = "*"
 
 [[package]]
+name = "dynaconf"
+version = "3.1.8"
+description = "The dynamic configurator for your Python Project"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+all = ["redis", "ruamel.yaml", "configobj", "hvac"]
+configobj = ["configobj"]
+ini = ["configobj"]
+redis = ["redis"]
+test = ["pytest", "pytest-cov", "pytest-xdist", "pytest-mock", "flake8", "pep8-naming", "flake8-debugger", "flake8-print", "flake8-todo", "radon", "flask (>=0.12)", "django", "python-dotenv", "toml", "codecov", "redis", "hvac", "configobj"]
+toml = ["toml"]
+vault = ["hvac"]
+yaml = ["ruamel.yaml"]
+
+[[package]]
 name = "importlib-metadata"
 version = "4.11.3"
 description = "Read metadata from Python packages"
@@ -165,7 +183,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "5df8c168ed13505928e8d3ce98a5438d03859eba6aa91ca3402ee2d97db13e26"
+content-hash = "52e16f04421e5c52f1bc63950d493c0e234ebad33d7e05a164b55eb85c4f9577"
 
 [metadata.files]
 asgiref = [
@@ -209,6 +227,10 @@ django-solo = [
 djangorestframework = [
     {file = "djangorestframework-3.13.1-py3-none-any.whl", hash = "sha256:24c4bf58ed7e85d1fe4ba250ab2da926d263cd57d64b03e8dcef0ac683f8b1aa"},
     {file = "djangorestframework-3.13.1.tar.gz", hash = "sha256:0c33407ce23acc68eca2a6e46424b008c9c02eceb8cf18581921d0092bc1f2ee"},
+]
+dynaconf = [
+    {file = "dynaconf-3.1.8-py2.py3-none-any.whl", hash = "sha256:dea41800cf4eef488f49d3b5d1ff6305b85c3c21538f4dcfc39ab34d29606d28"},
+    {file = "dynaconf-3.1.8.tar.gz", hash = "sha256:d141a6664fca3648d2d8e84440966af9f58c4f4201ca78353a3f595a67c19ab4"},
 ]
 importlib-metadata = [
     {file = "importlib_metadata-4.11.3-py3-none-any.whl", hash = "sha256:1208431ca90a8cca1a6b8af391bb53c1a2db74e5d1cef6ddced95d4b2062edc6"},

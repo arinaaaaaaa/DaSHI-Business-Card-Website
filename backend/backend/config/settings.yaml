@@ -1,0 +1,25 @@
+default:
+    hostname: "localhost:8000"
+    port: 80
+    db_hostname: "127.0.0.1"
+    db_port: 5433
+    db_username: "postgres"
+    db_password: "pw"
+    db_dbname: "postgres"
+    static_root: null
+    static_url: null
+    media_root: '/home/anmark/projects/DaSHI-Business-Card-Website/backend/media'
+    media_url: 'http://localhost:8000/media/'
+    debug: true
+
+production:
+    hostname: "www.dsparts-dv.com"
+    port: 80
+    db_hostname: "localhost"
+    db_port: 5432
+    db_username: "dashi_admin"
+    db_password: "dashi_admin_password_(S`NW$p9FE5#G$Bd"
+    db_dbname: "dashi_db"
+    debug: false
+    static_root: '/www-data/'
+    static_url: 'http://www.dsparts-dv.com:80/static/'
