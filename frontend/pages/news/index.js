@@ -53,7 +53,7 @@ function NewsItem(props) {
         <span className={styles.newsItem}>
             <span className={styles.newsImage}>
                 <img src={props.icon} style = {{height: 233 + "px", width: 386 + "px"}} alt="" />
-                <img className={styles.maskImg} src="/images/maskNews.svg" alt="" />
+                <img className={styles.maskImg} src="/images/maskNews.png" alt="" />
             </span>
             <div className={styles.newsWrapper}>
                 <span className={styles.information}>
