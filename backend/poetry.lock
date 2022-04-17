@@ -58,6 +58,17 @@ python-versions = ">=3.7"
 Django = ">=2.2"
 
 [[package]]
+name = "django-solo"
+version = "2.0.0"
+description = "Django Solo helps working with singletons"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+django = ">=2.2"
+
+[[package]]
 name = "djangorestframework"
 version = "3.13.1"
 description = "Web APIs for Django, made easy."
@@ -154,7 +165,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "66056da9c1c2d0d442cdfbe010b6698b6f5ee44b25a811eee9385570ea044190"
+content-hash = "5df8c168ed13505928e8d3ce98a5438d03859eba6aa91ca3402ee2d97db13e26"
 
 [metadata.files]
 asgiref = [
@@ -190,6 +201,10 @@ django-cors = [
 django-cors-headers = [
     {file = "django-cors-headers-3.11.0.tar.gz", hash = "sha256:eb98389bf7a2afc5d374806af4a9149697e3a6955b5a2dc2bf049f7d33647456"},
     {file = "django_cors_headers-3.11.0-py3-none-any.whl", hash = "sha256:a22be2befd4069c4fc174f11cf067351df5c061a3a5f94a01650b4e928b0372b"},
+]
+django-solo = [
+    {file = "django-solo-2.0.0.tar.gz", hash = "sha256:7c6dbe04ae858a4645b580ec83a31a960a067ad4525d8227cca50b7fc5983a62"},
+    {file = "django_solo-2.0.0-py3-none-any.whl", hash = "sha256:9046eca738f2ed64dbef38c2107a02af1065a8899b4f9fabf61b06b8325de1b4"},
 ]
 djangorestframework = [
     {file = "djangorestframework-3.13.1-py3-none-any.whl", hash = "sha256:24c4bf58ed7e85d1fe4ba250ab2da926d263cd57d64b03e8dcef0ac683f8b1aa"},

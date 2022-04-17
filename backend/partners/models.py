@@ -10,3 +10,7 @@ class Partner(models.Model):
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        verbose_name = 'Карточка партнера'
+        verbose_name_plural = 'Карточки партнеров'
