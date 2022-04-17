@@ -68,7 +68,7 @@ function NewsItem(props) {
                         }
                     </span>
                     {props.shortPart ? 
-                        <button className={styles.showMore} onClick={() => startAnimation()}>
+                        <button className={`${styles.showMore} underlined_link`} onClick={() => startAnimation()}>
                             {!fullNew ? "Читать полностью" : "Скрыть новость"}
                             <animated.img src="/icons/showAnswer.svg" alt="" style={arrowRotate}/>
                         </button>
