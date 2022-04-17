@@ -26,10 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-$11r5^1tl%x1w^in4#o4*_iun1=0s!37+mj-5krw1a)uzo*3r4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = dynaconf_settings.DEBUG
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
-
+ALLOWED_HOSTS = ['http://www.dashiparts.com', 'localhost', '127.0.0.1', 'www.dashiparts.com']
 
 # Application definition
 
@@ -141,7 +140,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:3000',
     'http://localhost:3000',
-    'http://frontend:3000'
+    'http://frontend:3000',
+    'http://frontend:3000',
+    'http://www.dashiparts.com:3001'
+]
+
+CORST_TRUSTED_ORIGINS = [
+    'http://www.dashiparts.com'
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True

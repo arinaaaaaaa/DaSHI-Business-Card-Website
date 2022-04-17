@@ -19,7 +19,9 @@ production:
     db_port: 5432
     db_username: "dashi_admin"
     db_password: "dashi_admin_password_(S`NW$p9FE5#G$Bd"
-    db_dbname: "dashi_db"
+    db_dbname: "ds_business"
     debug: false
+    media_url: 'www.dashiparts.com/media/'
+    media_root: 'www-data/media/'
     static_root: '/www-data/'
     static_url: 'http://www.dsparts-dv.com:80/static/'
