@@ -5,7 +5,7 @@ import styles from "../../styles/components/Header.module.css";
 
 import { useRouter } from 'next/router';
 
-function HeaderLink(props) {
+export function HeaderLink(props) {
     const router = useRouter();
 
     const [active, setActive] = useState(router.asPath.match(props.reference));

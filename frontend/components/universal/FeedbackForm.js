@@ -47,7 +47,7 @@ export default function FeedbackForm(props) {
     }, []);
 
     return (
-        <div className={styles.feedbackSection}>
+        <div id="feedback" className={styles.feedbackSection}>
             <div ref={formRef} className={styles.feedback}>
                 <img src="images/feedbackBackground.svg" alt="" />
                 <div className={styles.formHeader}>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { HeaderLink } from './Header';
 import styles from "../../styles/components/Footer.module.css";
 
 function CompanyInfo() {
@@ -15,12 +16,12 @@ function Navigation() {
     return (
         <span>
             <div className = {styles.linksSection}>
-                <Link  href="/contacts"><a className="underlined_link">КОНТАКТЫ</a></Link>
-                <Link  href="/products"><a className="underlined_link">ПРОДУКЦИЯ DaSHI</a></Link>
-                <Link  href="/partners"><a className="underlined_link">ПАРТНЕРАМ</a></Link>
+                <HeaderLink reference="/contacts" name="КОНТАКТЫ"/>
+                <HeaderLink reference="/products" name="ПРОДУКЦИЯ DaSHI"/>
+                <HeaderLink reference="/partners" name="ПАРТНЕРАМ"/>
                 <Link  href="/contacts#feedback"><a className="underlined_link">НАПИШИТЕ НАМ</a></Link>
-                <Link  href="/buyers"><a className="underlined_link">ПОКУПАТЕЛЯМ</a></Link>
-                <Link  href="/about"><a className="underlined_link">О DaSHI</a></Link>
+                <HeaderLink reference="/buyers" name="ПОКУПАТЕЛЯМ"/>
+                <HeaderLink reference="/about" name="О DaSHI"/>
             </div>
             <div className = {styles.productsDS}>
                 <p className = {styles.partnersNote}><span style={{color: '#F46628'}}>ПРОДУКЦИЯ DS</span>, ПРЕДСТАВЛЕННАЯ<br/>ПАРТНЕРАМИ НА</p>
