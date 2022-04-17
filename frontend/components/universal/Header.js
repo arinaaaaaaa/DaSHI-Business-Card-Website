@@ -3,14 +3,36 @@ import Link from 'next/link';
 import Switch from "react-switch";
 import styles from "../../styles/components/Header.module.css";
 
+import { useRouter } from 'next/router';
+
+function HeaderLink(props) {
+    const router = useRouter();
+
+    const [active, setActive] = useState(router.asPath.match(props.reference));
+
+    return (
+        <Link href={props.reference}>
+            <a 
+                className={`${styles.linkItem} ${active ? "" : "underlined_link"}`}
+                style={{
+                    color: active ? "#F46628" : "#2B1A51"
+                }}
+            >
+                {props.name}
+            </a>
+        </Link>
+    )
+}
+
 function HeaderLinks() {
+
     return (
         <div className = {styles.linksSection}>
-            <Link href="/products"><a className={`${styles.linkItem} underlined_link`}>ПРОДУКЦИЯ DaSHI</a></Link>
-            <Link href="/buyers"><a className = {`${styles.linkItem} underlined_link`}>ПОКУПАТЕЛЯМ</a></Link>
-            <Link href="/partners"><a className = {`${styles.linkItem} underlined_link`}>ПАРТНЕРАМ</a></Link>
-            <Link href="/about"><a className = {`${styles.linkItem} underlined_link`}>О DaSHI</a></Link>
-            <Link href="/news"><a className = {`${styles.linkItem} underlined_link`}>НОВОСТИ</a></Link>
+            <HeaderLink reference="/products" name="ПРОДУКЦИЯ DaSHI"/>
+            <HeaderLink reference="/buyers" name="ПОКУПАТЕЛЯМ"/>
+            <HeaderLink reference="/partners" name="ПАРТНЕРАМ"/>
+            <HeaderLink reference="/about" name="О DaSHI"/>
+            <HeaderLink reference="/news" name="НОВОСТИ"/>
         </div>
     )
 }
@@ -52,7 +74,9 @@ function Header() {
                 </a>
             </Link>
             <HeaderLinks/>
-            <div className={styles.contactsLink}><Link href="/contacts"><a className='underlined_link'>КОНТАКТЫ</a></Link></div>
+            <div className={styles.contactsLink}>
+            <HeaderLink reference="/contacts" name="КОНТАКТЫ"/>
+            </div>
             
         </div>
     )
