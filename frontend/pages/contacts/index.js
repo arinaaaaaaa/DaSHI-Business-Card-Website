@@ -94,7 +94,7 @@ function Partners() {
                             />
                         )}
                     </div>
-                    {partnersList.length > 4 ? <button className={styles.showMorePartners} onClick={() => setOpened(!isOpened)}>{isOpened ? "Скрыть" : "Смотреть все"}</button> : null}
+                    {partnersList.length > 4 ? <button className={`${styles.showMorePartners} underlined_link`} onClick={() => setOpened(!isOpened)}>{isOpened ? "Скрыть" : "Смотреть все"}</button> : null}
                 </div>
             </div>
         )}
