@@ -1,7 +1,7 @@
 .feedbackformwrapper {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     position: fixed;
     transition: 0.3s;
     z-index: 100;
