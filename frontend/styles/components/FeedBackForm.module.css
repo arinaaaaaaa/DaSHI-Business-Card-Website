@@ -63,6 +63,7 @@
     font-family: 'gilroy';
     font-size: 13px;
     outline: none;
+    color: #2B1A51;
 }
 .userDataInput:last-child, .messageForm textarea { margin-bottom: 0; }
 .messageForm textarea {
