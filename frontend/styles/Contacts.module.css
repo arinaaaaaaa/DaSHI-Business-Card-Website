@@ -52,7 +52,7 @@
     margin: 40px 0px;
     display: grid;
     grid-template-columns: repeat(4, 273px);
-    column-gap: 26px;
+    column-gap: 39.3px;
     row-gap: 26px;
 }
 .partnerItem, .partnerItemShort {
