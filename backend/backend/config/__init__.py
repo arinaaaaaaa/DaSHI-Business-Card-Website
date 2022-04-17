@@ -6,7 +6,7 @@ settings = Dynaconf(
     envvar_prefix="DYNACONF",
     environments=True,
     settings_files=[
-        '/home/anmark/projects/DaSHI-Business-Card-Website/backend/backend/config/settings.yaml', 
+        environ.get('DASHI_CARD_BACKEND_CONFIG_PATH'), 
         '.secrets.yaml'
     ],
 )
