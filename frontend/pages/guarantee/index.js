@@ -11,8 +11,8 @@ function Banner() {
                 <div className={styles.guarantee}>
                     <p className={styles.title}>ГАРАНТИЯ НА<br/>ПРОДУКЦИЮ<span style={{color: '#F46628'}}> DS</span></p>
                     <div className={styles.subTitle}>ГАРАНТИЯ</div>
+                    <img src="images/guarantee.png" alt="" />
                 </div>
-                <img src="images/guarantee.png" alt="" />
             </div>
         </>
     )
@@ -51,9 +51,9 @@ function RuleItem(props) {
 
     return (
         <div className={styles.ruleItem}>
-            <div className={styles.ruleSection}>
+            <div className={`${styles.ruleSection} ${props.description ? "pointerOnHover": ''}`} onClick={() => props.description ? startAnimation(): null}>
                 <p>{props.rule}</p>
-                {props.description != null ? <animated.img className="pointerOnHover" style={arrowRotate} src="icons/showAnswer.svg" alt="" onClick={() => startAnimation()}/> : null}
+                {props.description != null ? <animated.img style={arrowRotate} src="icons/showAnswer.svg" alt=""/> : null}
             </div>
             {isOpen ?
                 <div className={styles.descriptionSection} style = {props.long == "yes" ? {marginTop: 10+"px"} : null} >

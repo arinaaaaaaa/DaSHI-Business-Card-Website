@@ -1,42 +1,43 @@
 .bannerSection {
     position: relative;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 346px;
+    height: 276px;
     margin-top: 50px;
     margin-bottom: 100px;
-    background-color: #fff;
+    background-color: #ffff;
 }
 .news {
     position: absolute;
-    width: 100%;
+    width: 1210px;
     height: 100%;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 78px 113px;
-    padding-right: 0;
+    padding-top: 45px;
     z-index: 1;
 }
 .news img {
     position: relative;
-    height: 379px;
+    height: 303px;
+    width: 303px;
     top: -130px;
-    right: 122px;
 }
 .title {
     font-family: 'foundry-boldita';
-    font-size: 43px;
+    font-size: 40px;
     line-height: 51.6px;
     color: #2B1A51;
     width: 100%;
 }
 .subTitle {
     font-family: 'foundry-boldita';
-    font-size: 160px;
+    font-size: 140px;
     color: #F6F6F6;
     position: absolute;
-    bottom: -48px;
-    left: 107px;
+    width: 1210px;
+    bottom: -39px;
 }
 .wrapper {
     display: flex;

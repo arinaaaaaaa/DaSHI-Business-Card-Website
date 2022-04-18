@@ -10,7 +10,7 @@ function Banner() {
         <div className={styles.bannerSection}>
             <div className={styles.contacts}>
                 <p className={styles.title}>НАШИ<br/><span style={{color: '#F46628'}}>КОНТАКТЫ</span></p>
-                <img src="images/contactsImage.svg" alt="" />
+                <img src="images/contactsImage.png" alt="" />
             </div>
             <div className={styles.subTitle}>НАШИ КОНТАКТЫ</div>
         </div>
