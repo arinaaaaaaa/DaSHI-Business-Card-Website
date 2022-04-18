@@ -145,7 +145,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://www.dashiparts.com:3001'
 ]
 
-CORST_TRUSTED_ORIGINS = [
+CORS_TRUSTED_ORIGINS = [
     'http://www.dashiparts.com'
 ]
 
