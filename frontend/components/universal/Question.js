@@ -26,7 +26,7 @@ function Question() {
                     type="text"
                     placeholder="КАКИЕ ФОРСУНКИ ДОЛЖНЫ БЫТЬ В ВАШЕМ РЕГИОНЕ, ГОРОДЕ, НАСЕЛЕННОМ ПУНКТЕ?"
                 />
-                <button>ОТПРАВИТЬ</button>
+                <button>ВАШ ВОПРОС</button>
             </span>
             <QuestionFormModal updater={handleInput} content={value} close={closeForm} isVisible={showForm}/>
         </div>
