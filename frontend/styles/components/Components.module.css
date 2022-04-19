@@ -18,6 +18,9 @@
     outline: none;
 }
 .questionForm input::placeholder { color: #2B1A51; }
+.questionForm input:focus::placeholder {
+    color: transparent;
+}
 .questionForm button {
     height: 53px;
     width: 180px;
