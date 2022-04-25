@@ -7,7 +7,7 @@
 .questionForm input {
     height: 53px;
     width: 1030px;
-    border: none;
+    border: 1px solid #2B1A51;
     box-sizing: border-box;
     padding-left: 41px;
     padding-right: 41px;
@@ -30,7 +30,10 @@
     font-size: 17px;
     color: #fff;
 }
-.questionForm { border: 1px solid #2B1A51; }
+
+.questionForm input:focus {
+    border: 1px solid #F46628;
+}
 .menu {
     height: 559px;
     display: flex;

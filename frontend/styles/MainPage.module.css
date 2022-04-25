@@ -4,8 +4,16 @@
     justify-content: space-between;
     align-items: start;
     box-sizing: border-box;
+    border: 4px solid #fff;
     padding: 36px 63px;
     background-color: #fff;
+}
+.bigNewsSection:hover {
+    background-color: #F6F6F6;
+    border-color: #fff;
+}
+.test {
+    text-decoration: none !important;
 }
 .titleSection { display: flex; }
 .newsTitleBanner{
@@ -84,15 +92,6 @@
     color: #2B1A51;
     margin-bottom: 22px;
 }
-
-.titleSection:hover .bannerInfoTitle {
-    text-decoration: underline !important;
-}
-
-.titleSection:hover .bannerInfoSpecial {
-    text-decoration: underline !important;
-}
-
 
 .bannerInfoTitle {
     text-decoration-color: #2B1A51 !important;

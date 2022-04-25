@@ -21,25 +21,28 @@ function BigNews() {
   if (bannerInfo != null) {
     return (
         <div className={styles.bannerSection}>
-          <div className={styles.bigNewsSection}>
-            <span className={styles.titleSection}>
-              <img src={bannerInfo.titleIcon} alt="" style={{width: 34 +"px", height: 44 +"px"}}/>
-              <Link href={bannerInfo.newsLink}>
-                <a className={styles.newsTitleBanner}>
-                  <span className={styles.bannerInfoTitle}> {bannerInfo.title}</span><br/>
-                  <span 
-                    style={{
-                      color: '#F46628',
-                    }}
-                    className={styles.bannerInfoSpecial}
-                >{bannerInfo.special}</span></a>
-              </Link>
-            </span>
-            <span className={styles.top}>
-              <img src={bannerInfo.subtitleIcon} alt="" style={{width: 25 +"px", height: 25 +"px"}}/>
-              <p>{bannerInfo.subtitle}</p>
-            </span>
-          </div>
+          <Link href={bannerInfo.newsLink}>
+            <a className={styles.test}>
+              <div className={styles.bigNewsSection}>
+                <span className={styles.titleSection}>
+                  <img src={bannerInfo.titleIcon} alt="" style={{width: 34 +"px", height: 44 +"px"}}/>
+                    <div className={styles.newsTitleBanner}>
+                      <span className={styles.bannerInfoTitle}> {bannerInfo.title}</span><br/>
+                      <span 
+                        style={{
+                          color: '#F46628',
+                        }}
+                        className={styles.bannerInfoSpecial}
+                      >{bannerInfo.special}</span>
+                    </div>
+                </span>
+                <span className={styles.top}>
+                  <img src={bannerInfo.subtitleIcon} alt="" style={{width: 25 +"px", height: 25 +"px"}}/>
+                  <p>{bannerInfo.subtitle}</p>
+                </span>
+              </div>
+            </a>
+          </Link>
         </div>
     )
   }

@@ -14,16 +14,25 @@
     position: relative;
     overflow: hidden;
 }
-.feedback img {
+.pattern {
     position: absolute;
     right: -35px;
     top: 36px;
+}
+.closeicon {
+    z-index: 2;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
 }
 .formTitle {
     font-family: 'foundry-boldita';
     font-size: 33px;
     margin-bottom: 10px;
     color: #2B1A51;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .formPS {
     font-family: 'gilroy';

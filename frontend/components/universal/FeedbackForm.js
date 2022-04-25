@@ -49,9 +49,14 @@ export default function FeedbackForm(props) {
     return (
         <div id="feedback" className={styles.feedbackSection}>
             <div ref={formRef} className={styles.feedback}>
-                <img src="images/feedbackBackground.svg" alt="" />
+                <img className={styles.pattern} src="images/feedbackBackground.svg" alt="" />
                 <div className={styles.formHeader}>
-                    <p className={styles.formTitle}><span style={{color: '#F46628'}}>СВЯЗАТЬСЯ</span> С ПРЕДСТАВИТЕЛЕМ БРЕНДА</p>
+                    <p className={styles.formTitle}>
+                        <span>
+                            <span style={{color: '#F46628'}}>СВЯЗАТЬСЯ</span> С ПРЕДСТАВИТЕЛЕМ БРЕНДА
+                        </span>
+                        {props.close && <img onClick={props.close} className={styles.closeicon} src="/icons/close_modal.svg"/>}
+                    </p>
                     <p className={styles.formPS}>Напишите нам, заполнив форму ниже</p>
                     <p className={styles.formPS}>*** Для того, чтобы стать нашим партнером и представителем DS в Вашем регионе в нижеуказанной форме заполните раздел &quot;Для сотрудничества&quot;</p>
                 </div>

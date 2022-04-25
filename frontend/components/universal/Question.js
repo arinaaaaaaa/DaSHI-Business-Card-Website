@@ -8,7 +8,6 @@ function Question() {
     const [value, setValue] = useState('');
 
     function handleInput(event) {
-        console.log(`CONTENT -> ${event.target.value}`)
         setValue(event.target.value);
         setShowForm(true);
     }
